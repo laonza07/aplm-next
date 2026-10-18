@@ -3,193 +3,313 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>APLM 360° Virtual Tour Preview | สำนักส่งเสริมวิชาการและจัดการเรียนรู้ตลอดชีวิต</title>
+  <title>APLM 360° Virtual Tour | สำนักส่งเสริมวิชาการและจัดการเรียนรู้ตลอดชีวิต มรภ.ศรีสะเกษ</title>
   <link rel="icon" href="assets/bureau-logo.png">
-  <!-- Pannellum 360 Engine -->
+  <!-- Pannellum 360 Viewer Engine -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css">
   <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
   <style>
     * { box-sizing: border-box; }
-    body { margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, sans-serif; background: #061b3e; color: #fff; overflow: hidden; }
+    body { margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, -apple-system, sans-serif; background: #061b3e; color: #fff; overflow: hidden; }
     #panorama { width: 100vw; height: 100vh; }
-    
+
+    /* Top Left Header Badge */
     .tour-header {
       position: absolute; top: 18px; left: 18px; z-index: 20;
-      background: rgba(6, 27, 62, 0.88); backdrop-filter: blur(10px);
-      padding: 14px 22px; border-radius: 14px; border: 1px solid rgba(228, 176, 74, 0.5);
-      box-shadow: 0 8px 24px rgba(0,0,0,0.35); max-width: 420px;
+      background: rgba(6, 27, 62, 0.9); backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      padding: 12px 20px; border-radius: 14px; border: 1px solid rgba(228, 176, 74, 0.5);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.45); max-width: 440px;
+      transition: transform .25s ease;
     }
-    .tour-header-brand { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; }
-    .tour-header-brand img { width: 36px; height: 36px; object-fit: contain; }
-    .tour-header h1 { margin: 0; font-size: 15px; font-weight: 700; color: #e4b04a; line-height: 1.4; }
-    .tour-header p { margin: 0; font-size: 12px; color: #cbd7e9; line-height: 1.5; }
+    .tour-header-brand { display: flex; align-items: center; gap: 12px; }
+    .tour-header-brand img { width: 40px; height: 40px; object-fit: contain; }
+    .tour-header h1 { margin: 0; font-size: 15px; font-weight: 700; color: #e4b04a; line-height: 1.35; letter-spacing: -0.01em; }
+    .tour-header p { margin: 3px 0 0; font-size: 12px; color: #cbd7e9; line-height: 1.4; }
 
+    /* Top Right Controls */
+    .tour-top-actions {
+      position: absolute; top: 18px; right: 18px; z-index: 20;
+      display: flex; gap: 10px; align-items: center;
+    }
+    .tour-btn {
+      background: rgba(6, 27, 62, 0.88); backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(228, 176, 74, 0.45); color: #fff;
+      padding: 9px 16px; border-radius: 10px; text-decoration: none; font-size: 13px;
+      font-weight: 600; display: inline-flex; align-items: center; gap: 8px;
+      cursor: pointer; transition: all .2s ease; box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+    }
+    .tour-btn:hover { background: #e4b04a; color: #061b3e; border-color: #e4b04a; transform: translateY(-2px); }
+    .tour-btn svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+
+    /* Bottom Navigation Bar */
     .tour-nav {
       position: absolute; bottom: 26px; left: 50%; transform: translateX(-50%);
-      display: flex; gap: 10px; z-index: 20;
-      background: rgba(6, 27, 62, 0.88); backdrop-filter: blur(10px);
-      padding: 8px 14px; border-radius: 40px; border: 1px solid rgba(228, 176, 74, 0.4);
-      box-shadow: 0 8px 28px rgba(0,0,0,0.4); flex-wrap: wrap; justify-content: center;
+      display: flex; gap: 8px; z-index: 20;
+      background: rgba(6, 27, 62, 0.92); backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      padding: 8px 12px; border-radius: 40px; border: 1px solid rgba(228, 176, 74, 0.45);
+      box-shadow: 0 10px 32px rgba(0,0,0,0.5); flex-wrap: wrap; justify-content: center;
     }
     .nav-btn {
-      background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.15);
-      color: #fff; padding: 9px 18px; border-radius: 20px; cursor: pointer; font-size: 13px;
-      font-weight: 600; transition: all .2s ease;
+      background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.14);
+      color: #fff; padding: 9px 18px; border-radius: 24px; cursor: pointer; font-size: 13px;
+      font-weight: 600; transition: all .2s ease; display: inline-flex; align-items: center; gap: 7px;
     }
     .nav-btn:hover { background: rgba(228, 176, 74, 0.25); border-color: #e4b04a; color: #e4b04a; }
     .nav-btn.active {
       background: linear-gradient(135deg, #e4b04a, #c69022); color: #061b3e;
-      border-color: #fff; font-weight: 700; box-shadow: 0 4px 14px rgba(228, 176, 74, 0.35);
+      border-color: #fff; font-weight: 700; box-shadow: 0 4px 14px rgba(228, 176, 74, 0.4);
+    }
+    .nav-btn svg { width: 14px; height: 14px; fill: none; stroke: currentColor; stroke-width: 2.2; }
+
+    /* Scene Indicator HUD */
+    .scene-hud {
+      position: absolute; top: 90px; left: 18px; z-index: 15;
+      background: rgba(6, 27, 62, 0.75); backdrop-filter: blur(8px);
+      border-left: 3px solid #e4b04a; padding: 6px 14px; border-radius: 0 8px 8px 0;
+      font-size: 12px; color: #e4b04a; font-weight: 600; pointer-events: none;
     }
 
-    .tour-back {
-      position: absolute; top: 18px; right: 18px; z-index: 20;
-      background: rgba(6, 27, 62, 0.88); backdrop-filter: blur(10px);
-      border: 1px solid rgba(228, 176, 74, 0.4); color: #fff;
-      padding: 10px 18px; border-radius: 10px; text-decoration: none; font-size: 13px;
-      font-weight: 600; display: inline-flex; align-items: center; gap: 8px;
-      transition: all .2s;
+    /* Custom Hotspot Styling */
+    .pnlm-hotspot-base {
+      transition: transform .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     }
-    .tour-back:hover { background: #e4b04a; color: #061b3e; }
+    .pnlm-hotspot-base:hover {
+      transform: scale(1.25);
+    }
+
+    @media (max-width: 768px) {
+      .tour-header { max-width: calc(100vw - 36px); padding: 10px 14px; }
+      .tour-header h1 { font-size: 13px; }
+      .tour-header p { display: none; }
+      .tour-nav { width: calc(100vw - 32px); bottom: 16px; border-radius: 18px; padding: 6px; }
+      .nav-btn { font-size: 11px; padding: 7px 12px; flex: 1 1 auto; text-align: center; justify-content: center; }
+      .scene-hud { display: none; }
+      .tour-top-actions { top: auto; bottom: 85px; right: 16px; flex-direction: column; }
+    }
   </style>
 </head>
 <body>
 
+  <!-- Top Left Title Badge -->
   <div class="tour-header">
     <div class="tour-header-brand">
-      <img src="assets/bureau-logo.png" alt="APLM">
+      <img src="assets/bureau-logo.png" alt="ตราสำนัก APLM">
       <div>
         <h1>สำนักส่งเสริมวิชาการและจัดการเรียนรู้ตลอดชีวิต</h1>
-        <p>360° Virtual Tour ชมอาคารพัชรกิติยาภา</p>
+        <p>360° Virtual Tour ชมอาคารพัชรกิติยาภา มรภ.ศรีสะเกษ</p>
       </div>
     </div>
   </div>
 
-  <a class="tour-back" href="index.html">← กลับสู่หน้าหลัก APLM</a>
+  <div class="scene-hud" id="sceneHud">จุดชมที่ 1: ประตูทางเข้าอาคาร</div>
 
+  <!-- Top Right Actions -->
+  <div class="tour-top-actions">
+    <button class="tour-btn" id="autoRotateBtn" type="button" title="เปิด/ปิดการหมุนภาพอัตโนมัติ">
+      <svg viewBox="0 0 24 24"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
+      <span id="rotateLabel">หมุนอัตโนมัติ</span>
+    </button>
+    <a class="tour-btn" href="index.html" title="กลับหน้าแรก">
+      <svg viewBox="0 0 24 24"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      <span>หน้าหลัก</span>
+    </a>
+  </div>
+
+  <!-- 360 Panorama Container -->
   <div id="panorama"></div>
 
-  <div class="tour-nav">
-    <button class="nav-btn active" id="btn-entrance" onclick="switchScene('entrance', this)">1. ประตูทางเข้าอาคาร</button>
-    <button class="nav-btn" id="btn-counter" onclick="switchScene('counter_hall', this)">2. เคาน์เตอร์บริการ One-Stop</button>
-    <button class="nav-btn" id="btn-waiting" onclick="switchScene('waiting_area', this)">3. โถงบริการและพักคอย</button>
+  <!-- Bottom Interactive Navigation -->
+  <div class="tour-nav" role="tablist" aria-label="เลือกจุดชมเสมือนจริง">
+    <button class="nav-btn active" id="btn-entrance" type="button" onclick="switchScene('entrance', this)">
+      <svg viewBox="0 0 24 24"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4M10 17l5-5-5-5M15 12H3"/></svg>
+      <span>1. ประตูทางเข้าอาคาร</span>
+    </button>
+    <button class="nav-btn" id="btn-counter" type="button" onclick="switchScene('counter_hall', this)">
+      <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><line x1="7" y1="8" x2="17" y2="8"/><line x1="7" y1="12" x2="17" y2="12"/><line x1="7" y1="16" x2="12" y2="16"/></svg>
+      <span>2. เคาน์เตอร์บริการ 1–4</span>
+    </button>
+    <button class="nav-btn" id="btn-waiting" type="button" onclick="switchScene('waiting_area', this)">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+      <span>3. โถงบริการและพักคอย</span>
+    </button>
   </div>
 
   <script>
-    // ตัวอย่างภาพ 360 พาโนรามา (สามารถเปลี่ยนเป็นรูปถ่ายจริงใน assets/tour/ ได้ทันที)
+    let isAutoRotating = false;
+
+    // Initialize Pannellum 360 viewer with the 3 designed professional scenes
     const viewer = pannellum.viewer('panorama', {
       default: {
         firstScene: 'entrance',
-        author: 'APLM SSKRU',
+        author: 'APLM · Sisaket Rajabhat University',
         autoLoad: true,
-        compass: true,
+        compass: false,
         showZoomCtrl: true,
-        showFullscreenCtrl: true
+        showFullscreenCtrl: true,
+        mouseZoom: true,
+        hfov: 100,
+        minHfov: 60,
+        maxHfov: 125
       },
       scenes: {
         entrance: {
-          title: "ทางเข้าอาคารพัชรกิติยาภา (ชั้น 1)",
-          hfov: 110,
-          pitch: 0,
-          yaw: 15,
+          title: "ทางเข้าอาคารพัชรกิติยาภา (Phatcharakitiyapha Building)",
+          pitch: -1,
+          yaw: 0,
           type: "equirectangular",
-          panorama: "https://pannellum.org/images/alma.jpg",
+          panorama: "assets/tour/tour_entrance.jpg",
           hotSpots: [
             {
               pitch: -2,
-              yaw: 25,
+              yaw: 0,
               type: "scene",
-              text: "เดินเข้าสู่โถงเคาน์เตอร์บริการ 1-4",
+              text: "เดินเข้าสู่ศูนย์บริการ One-Stop Service (เคาน์เตอร์ 1–4)",
               sceneId: "counter_hall"
             },
             {
-              pitch: 5,
+              pitch: 16,
+              yaw: 0,
+              type: "info",
+              text: "ป้ายชื่อ: อาคารพัชรกิติยาภา ศูนย์บริการร่วมครบวงจร (APLM)"
+            },
+            {
+              pitch: -8,
               yaw: -30,
               type: "info",
-              text: "จุดคัดกรอง & ลงทะเบียนแรกรับ"
+              text: "บันไดทางขึ้นและทางลาดสำหรับผู้พิการและผู้สูงอายุ"
             }
           ]
         },
         counter_hall: {
-          title: "ศูนย์บริการนักศึกษา One-Stop Service (เคาน์เตอร์ 1-4)",
-          hfov: 110,
+          title: "ศูนย์บริการร่วม One-Stop Service (เคาน์เตอร์ 1–4)",
           pitch: -4,
-          yaw: 90,
+          yaw: 0,
           type: "equirectangular",
-          panorama: "https://pannellum.org/images/cerro-tolo.jpg",
+          panorama: "assets/tour/tour_counter.jpg",
           hotSpots: [
             {
-              pitch: 0,
-              yaw: -170,
+              pitch: -2,
+              yaw: -175,
               type: "scene",
-              text: "กลับไปประตูทางเข้า",
+              text: "กลับไปยังประตูทางเข้าอาคาร",
               sceneId: "entrance"
             },
             {
               pitch: -3,
               yaw: 55,
-              type: "info",
-              text: "เคาน์เตอร์ 1: งานลงทะเบียนและประมวลผล"
+              type: "scene",
+              text: "ไปยังโถงพักคอยและจุดบริการดิจิทัล Smart Kiosk",
+              sceneId: "waiting_area"
             },
             {
-              pitch: -3,
-              yaw: 85,
+              pitch: 4,
+              yaw: -45,
               type: "info",
-              text: "เคาน์เตอร์ 2: ขอเอกสารทางการศึกษา / รับรองวุฒิ"
+              text: "เคาน์เตอร์ที่ 1: งานลงทะเบียนเรียน ตารางสอน-ตารางสอบ"
             },
             {
-              pitch: -3,
-              yaw: 115,
+              pitch: 4,
+              yaw: -15,
               type: "info",
-              text: "เคาน์เตอร์ 3: รับสมัครนักศึกษาและสอบถามหลักสูตร"
+              text: "เคาน์เตอร์ที่ 2: ขอเอกสารทางการศึกษา (Transcript) & รับรองวุฒิ"
             },
             {
-              pitch: -3,
-              yaw: 145,
+              pitch: 4,
+              yaw: 18,
               type: "info",
-              text: "เคาน์เตอร์ 4: งานการเงินและทุนการศึกษา"
+              text: "เคาน์เตอร์ที่ 3: รับสมัครนักศึกษา & แนะนำหลักสูตรตลอดชีวิต"
+            },
+            {
+              pitch: 4,
+              yaw: 48,
+              type: "info",
+              text: "เคาน์เตอร์ที่ 4: การเงิน ทุนการศึกษา และสิทธิประโยชน์นักศึกษา"
             }
           ]
         },
         waiting_area: {
-          title: "โถงพักคอยและพื้นที่เรียนรู้ตลอดชีวิต",
-          hfov: 110,
-          pitch: 0,
+          title: "โถงพักคอยและพื้นที่เรียนรู้ตลอดชีวิต (Digital Learning Zone)",
+          pitch: -3,
           yaw: 0,
           type: "equirectangular",
-          panorama: "https://pannellum.org/images/bma.jpg",
+          panorama: "assets/tour/tour_lounge.jpg",
           hotSpots: [
             {
-              pitch: -4,
-              yaw: 120,
+              pitch: -3,
+              yaw: 0,
               type: "scene",
-              text: "เดินไปยังเคาน์เตอร์บริการ",
+              text: "เดินกลับไปหน้าเคาน์เตอร์บริการ 1–4",
               sceneId: "counter_hall"
             },
             {
-              pitch: 6,
-              yaw: -40,
+              pitch: -12,
+              yaw: 15,
               type: "info",
-              text: "จุดบริการเครื่องอัตโนมัติ Self-Service Kiosk"
+              text: "จุดบริการตนเอง: Smart Touchscreen Kiosk ตรวจสอบข้อมูลอัตโนมัติ"
+            },
+            {
+              pitch: 2,
+              yaw: -48,
+              type: "info",
+              text: "บอร์ดนิทรรศการและแผ่นพับหลักสูตรการศึกษาตลอดชีวิต (Credit Bank)"
+            },
+            {
+              pitch: -8,
+              yaw: -30,
+              type: "info",
+              text: "โซนเก้าอี้พักคอยปรับปรุงใหม่ สะดวกสบายพร้อมจุดชาร์จอุปกรณ์"
             }
           ]
         }
       }
     });
 
+    const hudTitles = {
+      entrance: 'จุดชมที่ 1: ประตูทางเข้าอาคารพัชรกิติยาภา',
+      counter_hall: 'จุดชมที่ 2: โถงเคาน์เตอร์บริการ One-Stop Service 1–4',
+      waiting_area: 'จุดชมที่ 3: โถงพักคอยและจุดบริการดิจิทัล Smart Kiosk'
+    };
+
     function switchScene(sceneId, btnElement) {
       viewer.loadScene(sceneId);
       document.querySelectorAll('.nav-btn').forEach(btn => btn.classList.remove('active'));
       if (btnElement) btnElement.classList.add('active');
+      const hud = document.getElementById('sceneHud');
+      if (hud && hudTitles[sceneId]) hud.textContent = hudTitles[sceneId];
     }
 
-    // อัปเดตสถานะปุ่มเมื่อผู้ใช้กดเดินผ่าน Hotspot ในฉาก 360
+    // Sync button state when user clicks Hotspot arrows in the 360 scene
     viewer.on('scenechange', function(sceneId) {
       document.querySelectorAll('.nav-btn').forEach(btn => btn.classList.remove('active'));
       if (sceneId === 'entrance') document.querySelector('#btn-entrance')?.classList.add('active');
       if (sceneId === 'counter_hall') document.querySelector('#btn-counter')?.classList.add('active');
       if (sceneId === 'waiting_area') document.querySelector('#btn-waiting')?.classList.add('active');
+      const hud = document.getElementById('sceneHud');
+      if (hud && hudTitles[sceneId]) hud.textContent = hudTitles[sceneId];
     });
+
+    // Auto rotate toggle
+    const autoRotateBtn = document.getElementById('autoRotateBtn');
+    const rotateLabel = document.getElementById('rotateLabel');
+    if (autoRotateBtn) {
+      autoRotateBtn.addEventListener('click', () => {
+        isAutoRotating = !isAutoRotating;
+        if (isAutoRotating) {
+          viewer.startAutoRotate(-2); // Slow, gentle rotation
+          rotateLabel.textContent = 'หยุดหมุน';
+          autoRotateBtn.style.background = '#e4b04a';
+          autoRotateBtn.style.color = '#061b3e';
+        } else {
+          viewer.stopAutoRotate();
+          rotateLabel.textContent = 'หมุนอัตโนมัติ';
+          autoRotateBtn.style.background = '';
+          autoRotateBtn.style.color = '';
+        }
+      });
+    }
   </script>
 </body>
 </html>
