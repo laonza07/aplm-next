@@ -143,4 +143,150 @@
       if (panel) { panel.classList.add('is-active'); panel.hidden = false; }
     });
   });
+
+  /* ── Activities Carousel ── */
+  const carouselSection = document.querySelector('#activities');
+  const carouselTrack = document.querySelector('#carouselTrack');
+  const carouselSlides = document.querySelectorAll('.carousel-slide');
+  const carouselPrev = document.querySelector('#carouselPrev');
+  const carouselNext = document.querySelector('#carouselNext');
+  const carouselDots = document.querySelector('#carouselDots');
+
+  if (carouselTrack && carouselSlides.length > 0) {
+    let currentSlide = 0;
+    let autoSlideTimer = null;
+
+    const getVisibleCount = () => {
+      if (window.innerWidth <= 900) return 1;
+      if (window.innerWidth <= 1200) return 2;
+      return 3;
+    };
+
+    const getMaxIndex = () => Math.max(0, carouselSlides.length - getVisibleCount());
+
+    const renderDots = () => {
+      if (!carouselDots) return;
+      const max = getMaxIndex();
+      carouselDots.innerHTML = Array.from({ length: max + 1 }, (_, i) => 
+        `<button class="carousel-dot${i === currentSlide ? ' is-active' : ''}" type="button" aria-label="สไลด์ชุดที่ ${i + 1}" data-index="${i}"></button>`
+      ).join('');
+    };
+
+    const updateCarousel = (index) => {
+      const max = getMaxIndex();
+      currentSlide = Math.max(0, Math.min(index, max));
+      const firstSlide = carouselSlides[0];
+      const gap = 24;
+      const slideWidth = firstSlide.getBoundingClientRect().width;
+      const offset = (slideWidth + gap) * currentSlide;
+      carouselTrack.style.transform = `translateX(-${offset}px)`;
+
+      if (carouselDots) {
+        carouselDots.querySelectorAll('.carousel-dot').forEach((dot, idx) => {
+          dot.classList.toggle('is-active', idx === currentSlide);
+        });
+      }
+    };
+
+    const nextSlide = () => {
+      const max = getMaxIndex();
+      updateCarousel(currentSlide >= max ? 0 : currentSlide + 1);
+    };
+
+    const prevSlide = () => {
+      const max = getMaxIndex();
+      updateCarousel(currentSlide <= 0 ? max : currentSlide - 1);
+    };
+
+    if (carouselNext) carouselNext.addEventListener('click', () => { nextSlide(); resetAutoSlide(); });
+    if (carouselPrev) carouselPrev.addEventListener('click', () => { prevSlide(); resetAutoSlide(); });
+
+    if (carouselDots) {
+      carouselDots.addEventListener('click', (e) => {
+        const dot = e.target.closest('[data-index]');
+        if (!dot) return;
+        updateCarousel(Number(dot.dataset.index));
+        resetAutoSlide();
+      });
+    }
+
+    const startAutoSlide = () => {
+      stopAutoSlide();
+      autoSlideTimer = setInterval(nextSlide, 5000);
+    };
+
+    const stopAutoSlide = () => {
+      if (autoSlideTimer) {
+        clearInterval(autoSlideTimer);
+        autoSlideTimer = null;
+      }
+    };
+
+    const resetAutoSlide = () => {
+      stopAutoSlide();
+      startAutoSlide();
+    };
+
+    if (carouselSection) {
+      carouselSection.addEventListener('mouseenter', stopAutoSlide);
+      carouselSection.addEventListener('mouseleave', startAutoSlide);
+      carouselSection.addEventListener('touchstart', stopAutoSlide, { passive: true });
+      carouselSection.addEventListener('touchend', startAutoSlide, { passive: true });
+    }
+
+    // Touch swipe support
+    let touchStartX = 0;
+    carouselTrack.addEventListener('touchstart', (e) => {
+      touchStartX = e.touches[0].clientX;
+    }, { passive: true });
+
+    carouselTrack.addEventListener('touchend', (e) => {
+      const touchEndX = e.changedTouches[0].clientX;
+      const diff = touchStartX - touchEndX;
+      if (Math.abs(diff) > 40) {
+        if (diff > 0) nextSlide();
+        else prevSlide();
+        resetAutoSlide();
+      }
+    }, { passive: true });
+
+    window.addEventListener('resize', () => {
+      renderDots();
+      updateCarousel(currentSlide);
+    }, { passive: true });
+
+    renderDots();
+    updateCarousel(0);
+    startAutoSlide();
+  }
+
+  /* ── Collapsible Floating CTA Dock ── */
+  const floatingDock = document.querySelector('#floatingDock');
+  const floatingToggle = document.querySelector('#floatingToggle');
+  const floatingTooltip = document.querySelector('#floatingToggleTooltip');
+
+  if (floatingDock && floatingToggle) {
+    const setCollapsed = (collapsed) => {
+      floatingDock.classList.toggle('is-collapsed', collapsed);
+      floatingToggle.setAttribute('aria-expanded', String(!collapsed));
+      floatingToggle.setAttribute('aria-label', collapsed ? 'เปิดเมนูด่วน' : 'พับเก็บเมนูด่วน');
+      if (floatingTooltip) {
+        floatingTooltip.textContent = collapsed ? 'เปิดเมนูด่วน' : 'พับเก็บเมนู';
+      }
+    };
+
+    floatingToggle.addEventListener('click', () => {
+      const isNowCollapsed = !floatingDock.classList.contains('is-collapsed');
+      setCollapsed(isNowCollapsed);
+      try {
+        localStorage.setItem('aplm_cta_collapsed', String(isNowCollapsed));
+      } catch (err) {}
+    });
+
+    try {
+      if (localStorage.getItem('aplm_cta_collapsed') === 'true') {
+        setCollapsed(true);
+      }
+    } catch (err) {}
+  }
 })();
