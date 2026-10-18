@@ -289,4 +289,42 @@
       }
     } catch (err) {}
   }
+
+  /* ── Hero Video Background Controls ── */
+  const heroVideo = document.querySelector('#heroVideo');
+  const heroSoundToggle = document.querySelector('#heroSoundToggle');
+  const heroPlayToggle = document.querySelector('#heroPlayToggle');
+  const soundLabel = document.querySelector('#soundLabel');
+
+  if (heroVideo) {
+    if (reducedMotion.matches) {
+      heroVideo.pause();
+      if (heroPlayToggle) heroPlayToggle.classList.add('is-paused');
+    }
+
+    if (heroSoundToggle) {
+      heroSoundToggle.addEventListener('click', () => {
+        heroVideo.muted = !heroVideo.muted;
+        heroSoundToggle.classList.toggle('is-unmuted', !heroVideo.muted);
+        if (soundLabel) {
+          soundLabel.textContent = heroVideo.muted ? 'เปิดเสียง' : 'ปิดเสียง';
+        }
+        heroSoundToggle.setAttribute('aria-label', heroVideo.muted ? 'เปิดเสียงวิดีโอ' : 'ปิดเสียงวิดีโอ');
+      });
+    }
+
+    if (heroPlayToggle) {
+      heroPlayToggle.addEventListener('click', () => {
+        if (heroVideo.paused) {
+          heroVideo.play();
+          heroPlayToggle.classList.remove('is-paused');
+          heroPlayToggle.setAttribute('aria-label', 'หยุดวิดีโอชั่วคราว');
+        } else {
+          heroVideo.pause();
+          heroPlayToggle.classList.add('is-paused');
+          heroPlayToggle.setAttribute('aria-label', 'เล่นวิดีโอ');
+        }
+      });
+    }
+  }
 })();

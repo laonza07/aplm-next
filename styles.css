@@ -250,4 +250,27 @@
   .faculties-grid{grid-template-columns:1fr}
 }
 
+/* ── Hero Video & Controls ── */
+.hero-video{pointer-events:none}
+.hero-video-controls{position:absolute;bottom:24px;right:0;display:flex;align-items:center;gap:10px;z-index:10}
+.hero-control-btn{display:inline-flex;align-items:center;gap:8px;background:rgba(6,27,62,0.75);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);color:#fff;border:1px solid rgba(228,176,74,0.4);border-radius:24px;padding:7px 15px;font-size:12px;font-weight:600;cursor:pointer;transition:background .2s,border-color .2s,transform .15s}
+.hero-control-btn:hover{background:rgba(228,176,74,0.3);border-color:var(--gold);transform:scale(1.04)}
+.hero-control-btn svg{width:16px;height:16px;stroke-width:2}
+.hero-control-btn .icon-sound{display:none}
+.hero-control-btn.is-unmuted .icon-sound{display:block}
+.hero-control-btn.is-unmuted .icon-muted{display:none}
+.hero-control-btn .icon-play{display:none}
+.hero-control-btn.is-paused .icon-play{display:block}
+.hero-control-btn.is-paused .icon-pause{display:none}
+
+@media(max-width:900px){
+  .hero-video-controls{bottom:18px;right:0;gap:8px}
+  .hero-control-btn{padding:6px 12px;font-size:11px}
+}
+@media(max-width:600px){
+  .hero-video-controls{bottom:14px;right:0}
+  .hero-control-btn .control-label{display:none}
+  .hero-control-btn{padding:8px;border-radius:50%}
+}
+
 
