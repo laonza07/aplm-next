@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>APLM 360° Virtual Tour Preview | สำนักส่งเสริมวิชาการและจัดการเรียนรู้ตลอดชีวิต</title>
+  <link rel="icon" href="assets/bureau-logo.png">
+  <!-- Pannellum 360 Engine -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css">
+  <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, sans-serif; background: #061b3e; color: #fff; overflow: hidden; }
+    #panorama { width: 100vw; height: 100vh; }
+    
+    .tour-header {
+      position: absolute; top: 18px; left: 18px; z-index: 20;
+      background: rgba(6, 27, 62, 0.88); backdrop-filter: blur(10px);
+      padding: 14px 22px; border-radius: 14px; border: 1px solid rgba(228, 176, 74, 0.5);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.35); max-width: 420px;
+    }
+    .tour-header-brand { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; }
+    .tour-header-brand img { width: 36px; height: 36px; object-fit: contain; }
+    .tour-header h1 { margin: 0; font-size: 15px; font-weight: 700; color: #e4b04a; line-height: 1.4; }
+    .tour-header p { margin: 0; font-size: 12px; color: #cbd7e9; line-height: 1.5; }
+
+    .tour-nav {
+      position: absolute; bottom: 26px; left: 50%; transform: translateX(-50%);
+      display: flex; gap: 10px; z-index: 20;
+      background: rgba(6, 27, 62, 0.88); backdrop-filter: blur(10px);
+      padding: 8px 14px; border-radius: 40px; border: 1px solid rgba(228, 176, 74, 0.4);
+      box-shadow: 0 8px 28px rgba(0,0,0,0.4); flex-wrap: wrap; justify-content: center;
+    }
+    .nav-btn {
+      background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.15);
+      color: #fff; padding: 9px 18px; border-radius: 20px; cursor: pointer; font-size: 13px;
+      font-weight: 600; transition: all .2s ease;
+    }
+    .nav-btn:hover { background: rgba(228, 176, 74, 0.25); border-color: #e4b04a; color: #e4b04a; }
+    .nav-btn.active {
+      background: linear-gradient(135deg, #e4b04a, #c69022); color: #061b3e;
+      border-color: #fff; font-weight: 700; box-shadow: 0 4px 14px rgba(228, 176, 74, 0.35);
+    }
+
+    .tour-back {
+      position: absolute; top: 18px; right: 18px; z-index: 20;
+      background: rgba(6, 27, 62, 0.88); backdrop-filter: blur(10px);
+      border: 1px solid rgba(228, 176, 74, 0.4); color: #fff;
+      padding: 10px 18px; border-radius: 10px; text-decoration: none; font-size: 13px;
+      font-weight: 600; display: inline-flex; align-items: center; gap: 8px;
+      transition: all .2s;
+    }
+    .tour-back:hover { background: #e4b04a; color: #061b3e; }
+  </style>
+</head>
+<body>
+
+  <div class="tour-header">
+    <div class="tour-header-brand">
+      <img src="assets/bureau-logo.png" alt="APLM">
+      <div>
+        <h1>สำนักส่งเสริมวิชาการและจัดการเรียนรู้ตลอดชีวิต</h1>
+        <p>360° Virtual Tour ชมอาคารพัชรกิติยาภา</p>
+      </div>
+    </div>
+  </div>
+
+  <a class="tour-back" href="index.html">← กลับสู่หน้าหลัก APLM</a>
+
+  <div id="panorama"></div>
+
+  <div class="tour-nav">
+    <button class="nav-btn active" id="btn-entrance" onclick="switchScene('entrance', this)">1. ประตูทางเข้าอาคาร</button>
+    <button class="nav-btn" id="btn-counter" onclick="switchScene('counter_hall', this)">2. เคาน์เตอร์บริการ One-Stop</button>
+    <button class="nav-btn" id="btn-waiting" onclick="switchScene('waiting_area', this)">3. โถงบริการและพักคอย</button>
+  </div>
+
+  <script>
+    // ตัวอย่างภาพ 360 พาโนรามา (สามารถเปลี่ยนเป็นรูปถ่ายจริงใน assets/tour/ ได้ทันที)
+    const viewer = pannellum.viewer('panorama', {
+      default: {
+        firstScene: 'entrance',
+        author: 'APLM SSKRU',
+        autoLoad: true,
+        compass: true,
+        showZoomCtrl: true,
+        showFullscreenCtrl: true
+      },
+      scenes: {
+        entrance: {
+          title: "ทางเข้าอาคารพัชรกิติยาภา (ชั้น 1)",
+          hfov: 110,
+          pitch: 0,
+          yaw: 15,
+          type: "equirectangular",
+          panorama: "https://pannellum.org/images/alma.jpg",
+          hotSpots: [
+            {
+              pitch: -2,
+              yaw: 25,
+              type: "scene",
+              text: "เดินเข้าสู่โถงเคาน์เตอร์บริการ 1-4",
+              sceneId: "counter_hall"
+            },
+            {
+              pitch: 5,
+              yaw: -30,
+              type: "info",
+              text: "จุดคัดกรอง & ลงทะเบียนแรกรับ"
+            }
+          ]
+        },
+        counter_hall: {
+          title: "ศูนย์บริการนักศึกษา One-Stop Service (เคาน์เตอร์ 1-4)",
+          hfov: 110,
+          pitch: -4,
+          yaw: 90,
+          type: "equirectangular",
+          panorama: "https://pannellum.org/images/cerro-tolo.jpg",
+          hotSpots: [
+            {
+              pitch: 0,
+              yaw: -170,
+              type: "scene",
+              text: "กลับไปประตูทางเข้า",
+              sceneId: "entrance"
+            },
+            {
+              pitch: -3,
+              yaw: 55,
+              type: "info",
+              text: "เคาน์เตอร์ 1: งานลงทะเบียนและประมวลผล"
+            },
+            {
+              pitch: -3,
+              yaw: 85,
+              type: "info",
+              text: "เคาน์เตอร์ 2: ขอเอกสารทางการศึกษา / รับรองวุฒิ"
+            },
+            {
+              pitch: -3,
+              yaw: 115,
+              type: "info",
+              text: "เคาน์เตอร์ 3: รับสมัครนักศึกษาและสอบถามหลักสูตร"
+            },
+            {
+              pitch: -3,
+              yaw: 145,
+              type: "info",
+              text: "เคาน์เตอร์ 4: งานการเงินและทุนการศึกษา"
+            }
+          ]
+        },
+        waiting_area: {
+          title: "โถงพักคอยและพื้นที่เรียนรู้ตลอดชีวิต",
+          hfov: 110,
+          pitch: 0,
+          yaw: 0,
+          type: "equirectangular",
+          panorama: "https://pannellum.org/images/bma.jpg",
+          hotSpots: [
+            {
+              pitch: -4,
+              yaw: 120,
+              type: "scene",
+              text: "เดินไปยังเคาน์เตอร์บริการ",
+              sceneId: "counter_hall"
+            },
+            {
+              pitch: 6,
+              yaw: -40,
+              type: "info",
+              text: "จุดบริการเครื่องอัตโนมัติ Self-Service Kiosk"
+            }
+          ]
+        }
+      }
+    });
+
+    function switchScene(sceneId, btnElement) {
+      viewer.loadScene(sceneId);
+      document.querySelectorAll('.nav-btn').forEach(btn => btn.classList.remove('active'));
+      if (btnElement) btnElement.classList.add('active');
+    }
+
+    // อัปเดตสถานะปุ่มเมื่อผู้ใช้กดเดินผ่าน Hotspot ในฉาก 360
+    viewer.on('scenechange', function(sceneId) {
+      document.querySelectorAll('.nav-btn').forEach(btn => btn.classList.remove('active'));
+      if (sceneId === 'entrance') document.querySelector('#btn-entrance')?.classList.add('active');
+      if (sceneId === 'counter_hall') document.querySelector('#btn-counter')?.classList.add('active');
+      if (sceneId === 'waiting_area') document.querySelector('#btn-waiting')?.classList.add('active');
+    });
+  </script>
+</body>
+</html>
