@@ -1,0 +1,14 @@
+{
+  "name": "aplm-next",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "APLM SSKRU — blue, white and gold student service portal",
+  "scripts": {
+    "dev": "node scripts/server.mjs",
+    "start": "node scripts/server.mjs",
+    "check": "node scripts/check.mjs",
+    "build": "node scripts/build.mjs"
+  },
+  "engines": { "node": ">=20" }
+}

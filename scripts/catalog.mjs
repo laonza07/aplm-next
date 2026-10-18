@@ -1,0 +1,64 @@
+import { readFile, writeFile } from 'node:fs/promises';
+const root = new URL('../', import.meta.url);
+const source = JSON.parse(await readFile(new URL('data/oass-links.json', root), 'utf8'));
+const categories = [
+  ['student','ระบบนักศึกษา'],['requests','คำร้องและแบบฟอร์ม'],['curriculum','หลักสูตรและคู่มือ'],['calendar','ปฏิทินการศึกษา'],['statistics','สถิติและรายงาน'],['about','เกี่ยวกับสำนัก'],['quality','คุณภาพ / ITA'],['news','ข่าวและประกาศ'],['survey','แบบสำรวจ / ร้องเรียน'],['network','เครือข่ายและการจัดอันดับ'],['archive','ลิงก์ต้นฉบับ']
+].map(([id,label]) => ({id,label}));
+const labels = {1:'เข้าสู่ระบบนักศึกษา',2:'หลักสูตรการศึกษา 2568',6:'สถิติข้อมูลนักศึกษา',120:'ช่องทางร้องเรียน (ภาพแบนเนอร์เดิม)',121:'Facebook สำนัก — ข่าวประชาสัมพันธ์',129:'EdPEx — โครงร่างองค์กร',131:'EdPEx — การนำองค์กร',133:'EdPEx — กลยุทธ์',135:'EdPEx — ลูกค้า',137:'EdPEx — การวัดและวิเคราะห์',139:'EdPEx — บุคลากร',141:'EdPEx — การปฏิบัติการ',143:'EdPEx — ผลลัพธ์',145:'No Gift Policy — แบนเนอร์',147:'นโยบายและประกาศ — ภาพต้นฉบับ',148:'นโยบายและประกาศ — ภาพต้นฉบับ',164:'ระบบตารางเรียนและตารางสอน',176:'E-service มหาวิทยาลัย',172:'แบบสำรวจการให้บริการ (ผู้ดูแล)',191:'คลังหน่วยกิต มหาวิทยาลัยราชภัฏศรีสะเกษ'};
+// Name only when the surrounding report or a matching named URL provides evidence.
+for (const id of [6,145,147,148]) delete labels[id];
+labels[6] = 'Facebook สำนัก (OASS2021)';
+function category(id) {
+  if (id === 6) return 'news';
+  if ([1,51,52,53,54,55,56,57,58,162,164,178,179,180,181,182,183,184].includes(id)) return 'student';
+  if (id >= 22 && id <= 37) return 'requests';
+  if ([2,3,4,5,38,39,40,41,42,43,44,45,46,47,48,49,50,191].includes(id)) return 'curriculum';
+  if ((id >= 59 && id <= 70) || id === 185) return 'calendar';
+  if ((id >= 6 && id <= 21) || [173,174,175,177].includes(id)) return 'statistics';
+  if (id >= 122 && id <= 128) return 'about';
+  if (id >= 129 && id <= 160) return 'quality';
+  if (id >= 80 && id <= 119 || [121,163].includes(id)) return 'news';
+  if ((id >= 71 && id <= 79) || [120,172].includes(id)) return 'survey';
+  if ((id >= 165 && id <= 171) || (id >= 186 && id <= 190) || id === 176) return 'network';
+  return 'archive';
+}
+const warnings = {185:'ชื่อเดิมระบุปฏิทิน Google แต่ปลายทางเป็นหน้าเข้าสู่ระบบนักศึกษา',190:'ชื่อเดิมระบุ SDGs แต่ปลายทางเป็นระบบร้องเรียน',120:'แบนเนอร์ต้นฉบับเชื่อมไปยังระบบร้องเรียน',172:'ปลายทางเป็นหน้าผู้ดูแล ต้องมีสิทธิ์เข้าถึง'};
+const links = source.map(item => {
+  const named = !item.label.startsWith('[รูปภาพ:');
+  const sameUrlName = source.find(other => other.url === item.url && !other.label.startsWith('[รูปภาพ:'))?.label;
+  const label = labels[item.id] || (named ? item.label : sameUrlName || `ลิงก์ต้นฉบับ #${item.id} — ${item.images?.[0]?.src || 'รูปภาพไม่มีชื่อ'}`);
+  return {id:item.id,label,originalLabel:item.label,url:item.url,category:!named && !labels[item.id] && !sameUrlName ? 'archive' : category(item.id),warning:warnings[item.id] || (item.url.includes('...') ? 'URL ต้นฉบับมีจุดไข่ปลา อาจเป็นลิงก์ที่คัดลอกมาไม่ครบ' : '')};
+});
+const menus = [
+  {id:'student',label:'บริการนักศึกษา',columns:[
+    {title:'ระบบบริการนักศึกษา',ids:[178,179,180,181,182,184,183]},
+    {title:'คำร้องและขั้นตอนบริการ',ids:[22,23,24,25,30,31,34],category:'requests'},
+    {title:'คู่มือและข้อมูลการศึกษา',ids:[4,3,69,70,12,41],category:'curriculum'},
+    {title:'ข้อมูลและบริการเพิ่มเติม',ids:[173,174,175,177,73],category:'statistics'}
+  ]},
+  {id:'learning',label:'หลักสูตรและคู่มือ',columns:[
+    {title:'หลักสูตรและการเรียนรู้',ids:[2,39,40,41,191],category:'curriculum'},
+    {title:'คู่มือและระเบียบ',ids:[3,4,38,42,43,45,50],category:'curriculum'},
+    {title:'ปฏิทินและแผนการเรียน',ids:[69,70,67,68,180,181],category:'calendar'},
+    {title:'สถิติการศึกษา',ids:[12,13,14,15,21,177],category:'statistics'}
+  ]},
+  {id:'about',label:'เกี่ยวกับสำนัก',columns:[
+    {title:'รู้จักสำนัก',ids:[122,123,124],category:'about'},
+    {title:'องค์กรและบุคลากร',ids:[125,126,127,128],category:'about'},
+    {title:'ระบบงานและเครือข่าย',ids:[49,163,176,186,191],category:'network'},
+    {title:'ติดต่อและรับฟังความคิดเห็น',ids:[73,74,76,77,121],category:'survey'}
+  ]},
+  {id:'quality',label:'คุณภาพและความโปร่งใส',columns:[
+    {title:'EdPEx — องค์กรและกลยุทธ์',ids:[130,132,134,136],category:'quality'},
+    {title:'EdPEx — การดำเนินงาน',ids:[138,140,142,144],category:'quality'},
+    {title:'ความโปร่งใสและนโยบาย',ids:[146,149,152,154,156,158,160],category:'quality'},
+    {title:'รายงานและการมีส่วนร่วม',ids:[173,174,175,177,73,76],category:'statistics'}
+  ]}
+];
+const news = [
+  {id:80,category:'ข่าวประชาสัมพันธ์',title:'ร่วมตอบแบบสำรวจความต้องการเข้ารับการฝึกอบรม'},
+  {id:82,category:'ประกาศสำหรับนักศึกษา',title:'การติดต่อขอรับใบปริญญาบัตร (เข้ารับปี 2568)'},
+  {id:85,category:'กิจกรรมสำนัก',title:'โครงการทวนสอบผลสัมฤทธิ์ตามมาตรฐานผลการเรียนรู้ หมวดวิชาศึกษาทั่วไป'}
+];
+await writeFile(new URL('data/catalog.js',root), `/* Generated by npm run build from the preserved OASS snapshot. */\nwindow.APLM_CATALOG = ${JSON.stringify({links,categories,labels,menus,news},null,2)};\n`);
+console.log(`Catalog: ${links.length} original links, ${menus.length} navigation groups.`);

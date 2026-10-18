@@ -1,0 +1,2297 @@
+[
+  {
+    "id": 1,
+    "label": "[รูปภาพ: pic/icon11.gif]",
+    "href": "https://app.sskru.ac.th/student/auth/login",
+    "url": "https://app.sskru.ac.th/student/auth/login",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/icon11.gif",
+        "alt": ""
+      }
+    ],
+    "type": "external",
+    "offset": 5155
+  },
+  {
+    "id": 2,
+    "label": "[รูปภาพ: pic/icon22.jpg]",
+    "href": "cur68.html",
+    "url": "https://www.oass.sskru.ac.th/cur68.html",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/icon22.jpg",
+        "alt": ""
+      }
+    ],
+    "type": "internal",
+    "offset": 5390
+  },
+  {
+    "id": 3,
+    "label": "ประกาศกระทรวง/ระเบียบ และแนวปฏิบัติที่เกี่ยวข้อง",
+    "href": "cu66.html",
+    "url": "https://www.oass.sskru.ac.th/cu66.html",
+    "target": "_blank",
+    "images": [],
+    "type": "internal",
+    "offset": 5684
+  },
+  {
+    "id": 4,
+    "label": "สารสนเทศคู่มือนักศึกษา",
+    "href": "std.590.html",
+    "url": "https://www.oass.sskru.ac.th/std.590.html",
+    "target": "_blank",
+    "images": [],
+    "type": "internal",
+    "offset": 5960
+  },
+  {
+    "id": 5,
+    "label": "คู่มือนักศึกษา 2559",
+    "href": "std.590.html",
+    "url": "https://www.oass.sskru.ac.th/std.590.html",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/pok.jpg",
+        "alt": "คู่มือนักศึกษา 2559"
+      }
+    ],
+    "type": "internal",
+    "offset": 6150
+  },
+  {
+    "id": 6,
+    "label": "[รูปภาพ: pic/fb.jpg]",
+    "href": "https://www.facebook.com/OASS2021",
+    "url": "https://www.facebook.com/OASS2021",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/fb.jpg",
+        "alt": ""
+      }
+    ],
+    "type": "external",
+    "offset": 6402
+  },
+  {
+    "id": 7,
+    "label": "สถิติข้อมูลนักศึกษา 1/63",
+    "href": "text/std63s.xlsx",
+    "url": "https://www.oass.sskru.ac.th/text/std63s.xlsx",
+    "target": "_blank",
+    "images": [],
+    "type": "internal",
+    "offset": 6712
+  },
+  {
+    "id": 8,
+    "label": "สถิติข้อมูลนักศึกษา 1/64",
+    "href": "text/std64s.xlsx",
+    "url": "https://www.oass.sskru.ac.th/text/std64s.xlsx",
+    "target": "_blank",
+    "images": [],
+    "type": "internal",
+    "offset": 6959
+  },
+  {
+    "id": 9,
+    "label": "สถิติข้อมูลนักศึกษา 1/65",
+    "href": "text/std65s.xlsx",
+    "url": "https://www.oass.sskru.ac.th/text/std65s.xlsx",
+    "target": "_blank",
+    "images": [],
+    "type": "internal",
+    "offset": 7207
+  },
+  {
+    "id": 10,
+    "label": "สถิติข้อมูลนักศึกษา 1/66",
+    "href": "text/std66s.xlsx",
+    "url": "https://www.oass.sskru.ac.th/text/std66s.xlsx",
+    "target": "_blank",
+    "images": [],
+    "type": "internal",
+    "offset": 7455
+  },
+  {
+    "id": 11,
+    "label": "สถิติข้อมูลนักศึกษา 1/67",
+    "href": "text/std67s.xlsx",
+    "url": "https://www.oass.sskru.ac.th/text/std67s.xlsx",
+    "target": "_blank",
+    "images": [],
+    "type": "internal",
+    "offset": 7697
+  },
+  {
+    "id": 12,
+    "label": "สถิติข้อมูลนักศึกษา 1/68",
+    "href": "text/std68s.xlsx",
+    "url": "https://www.oass.sskru.ac.th/text/std68s.xlsx",
+    "target": "_blank",
+    "images": [],
+    "type": "internal",
+    "offset": 7939
+  },
+  {
+    "id": 13,
+    "label": "สถิตินักศึกษาแยกชั้นปี",
+    "href": "stds69s.html",
+    "url": "https://www.oass.sskru.ac.th/stds69s.html",
+    "target": "_blank",
+    "images": [],
+    "type": "internal",
+    "offset": 8181
+  },
+  {
+    "id": 14,
+    "label": "สถิติการลาออก",
+    "href": "stdout.html",
+    "url": "https://www.oass.sskru.ac.th/stdout.html",
+    "target": "_blank",
+    "images": [],
+    "type": "internal",
+    "offset": 8417
+  },
+  {
+    "id": 15,
+    "label": "สถิติการลงทะเบียน 2568",
+    "href": "stdtu.html",
+    "url": "https://www.oass.sskru.ac.th/stdtu.html",
+    "target": "_blank",
+    "images": [],
+    "type": "internal",
+    "offset": 8649
+  },
+  {
+    "id": 16,
+    "label": "สถิตินักศึกษา64",
+    "href": "std64s.html",
+    "url": "https://www.oass.sskru.ac.th/std64s.html",
+    "target": "_blank",
+    "images": [],
+    "type": "internal",
+    "offset": 8883
+  },
+  {
+    "id": 17,
+    "label": "สถิตินักศึกษา65",
+    "href": "std65s.html",
+    "url": "https://www.oass.sskru.ac.th/std65s.html",
+    "target": "_blank",
+    "images": [],
+    "type": "internal",
+    "offset": 9105
+  },
+  {
+    "id": 18,
+    "label": "สถิตินักศึกษา66",
+    "href": "std66s.html",
+    "url": "https://www.oass.sskru.ac.th/std66s.html",
+    "target": "_blank",
+    "images": [],
+    "type": "internal",
+    "offset": 9327
+  },
+  {
+    "id": 19,
+    "label": "สถิตินักศึกษา67",
+    "href": "std67s.html",
+    "url": "https://www.oass.sskru.ac.th/std67s.html",
+    "target": "_blank",
+    "images": [],
+    "type": "internal",
+    "offset": 9549
+  },
+  {
+    "id": 20,
+    "label": "สถิตินักศึกษา68",
+    "href": "std68s.html",
+    "url": "https://www.oass.sskru.ac.th/std68s.html",
+    "target": "_blank",
+    "images": [],
+    "type": "internal",
+    "offset": 9777
+  },
+  {
+    "id": 21,
+    "label": "สถิตินักศึกษา69",
+    "href": "std69s.html",
+    "url": "https://www.oass.sskru.ac.th/std69s.html",
+    "target": "_blank",
+    "images": [],
+    "type": "internal",
+    "offset": 10008
+  },
+  {
+    "id": 22,
+    "label": "คำร้องทั่วไป",
+    "href": "text/k1.pdf",
+    "url": "https://www.oass.sskru.ac.th/text/k1.pdf",
+    "target": "_blank",
+    "images": [],
+    "type": "PDF",
+    "offset": 10451
+  },
+  {
+    "id": 23,
+    "label": "คำร้องขอพักการเรียน",
+    "href": "text/k3.pdf",
+    "url": "https://www.oass.sskru.ac.th/text/k3.pdf",
+    "target": "_blank",
+    "images": [],
+    "type": "PDF",
+    "offset": 10717
+  },
+  {
+    "id": 24,
+    "label": "คำร้องขอลาออก",
+    "href": "text/k4.pdf",
+    "url": "https://www.oass.sskru.ac.th/text/k4.pdf",
+    "target": "_blank",
+    "images": [],
+    "type": "PDF",
+    "offset": 10990
+  },
+  {
+    "id": 25,
+    "label": "คำร้องขอยกเลิกรายวิชาเรียน",
+    "href": "text/k6.pdf",
+    "url": "https://www.oass.sskru.ac.th/text/k6.pdf",
+    "target": "_blank",
+    "images": [],
+    "type": "PDF",
+    "offset": 11257
+  },
+  {
+    "id": 26,
+    "label": "คำร้องขอยกเว้น GE",
+    "href": "text/k8.pdf",
+    "url": "https://www.oass.sskru.ac.th/text/k8.pdf",
+    "target": "_blank",
+    "images": [],
+    "type": "PDF",
+    "offset": 11537
+  },
+  {
+    "id": 27,
+    "label": "คำร้องขอลงทะเบียนเรียนร่วมฯ",
+    "href": "text/k9.pdf",
+    "url": "https://www.oass.sskru.ac.th/text/k9.pdf",
+    "target": "_blank",
+    "images": [],
+    "type": "PDF",
+    "offset": 11808
+  },
+  {
+    "id": 28,
+    "label": "คำร้องขอแก้ไอ ( I )",
+    "href": "text/k11.pdf",
+    "url": "https://www.oass.sskru.ac.th/text/k11.pdf",
+    "target": "_blank",
+    "images": [],
+    "type": "PDF",
+    "offset": 12089
+  },
+  {
+    "id": 29,
+    "label": "คำร้องขอเปิดสอนกรณีพิเศษ",
+    "href": "text/k12.pdf",
+    "url": "https://www.oass.sskru.ac.th/text/k12.pdf",
+    "target": "_blank",
+    "images": [],
+    "type": "PDF",
+    "offset": 12363
+  },
+  {
+    "id": 30,
+    "label": "คำร้องขอยกเว้นรายวิชาเรียน",
+    "href": "text/k13.pdf",
+    "url": "https://www.oass.sskru.ac.th/text/k13.pdf",
+    "target": "_blank",
+    "images": [],
+    "type": "PDF",
+    "offset": 12642
+  },
+  {
+    "id": 31,
+    "label": "คำร้องขอโอนผลการเรียน",
+    "href": "text/k15.pdf",
+    "url": "https://www.oass.sskru.ac.th/text/k15.pdf",
+    "target": "_blank",
+    "images": [],
+    "type": "PDF",
+    "offset": 12923
+  },
+  {
+    "id": 32,
+    "label": "คำร้องขอย้ายสถานศึกษา",
+    "href": "text/k16.pdf",
+    "url": "https://www.oass.sskru.ac.th/text/k16.pdf",
+    "target": "_blank",
+    "images": [],
+    "type": "PDF",
+    "offset": 13198
+  },
+  {
+    "id": 33,
+    "label": "คำร้องเรียนซ้ำ (R)",
+    "href": "text/R.pdf",
+    "url": "https://www.oass.sskru.ac.th/text/R.pdf",
+    "target": "_blank",
+    "images": [],
+    "type": "PDF",
+    "offset": 13474
+  },
+  {
+    "id": 34,
+    "label": "คำร้องขอจบ",
+    "href": "text/k18.pdf",
+    "url": "https://www.oass.sskru.ac.th/text/k18.pdf",
+    "target": "_blank",
+    "images": [],
+    "type": "PDF",
+    "offset": 13710
+  },
+  {
+    "id": 35,
+    "label": "ใบประกันของเสียหาย",
+    "href": "text/k17.pdf",
+    "url": "https://www.oass.sskru.ac.th/text/k17.pdf",
+    "target": "_blank",
+    "images": [],
+    "type": "PDF",
+    "offset": 13940
+  },
+  {
+    "id": 36,
+    "label": "ใบยินยอมเปิดเผยข้อมูล",
+    "href": "text/k19.pdf",
+    "url": "https://www.oass.sskru.ac.th/text/k19.pdf",
+    "target": "_blank",
+    "images": [],
+    "type": "PDF",
+    "offset": 14178
+  },
+  {
+    "id": 37,
+    "label": "ขอใช้ห้อง(อาคาร7)",
+    "href": "text/k20.pdf",
+    "url": "https://www.oass.sskru.ac.th/text/k20.pdf",
+    "target": "_blank",
+    "images": [],
+    "type": "PDF",
+    "offset": 14413
+  },
+  {
+    "id": 38,
+    "label": "อบรมกรอกเกรด",
+    "href": "ita/o1506.pdf",
+    "url": "https://www.oass.sskru.ac.th/ita/o1506.pdf",
+    "target": "_blank",
+    "images": [],
+    "type": "PDF",
+    "offset": 14776
+  },
+  {
+    "id": 39,
+    "label": "การเปิด-ปิดหลักสูตร",
+    "href": "ita/o1405.pdf",
+    "url": "https://www.oass.sskru.ac.th/ita/o1405.pdf",
+    "target": "_blank",
+    "images": [],
+    "type": "PDF",
+    "offset": 14961
+  },
+  {
+    "id": 40,
+    "label": "แนวปฏิบัติสหกิจศึกษา",
+    "href": "ita/o1401.pdf",
+    "url": "https://www.oass.sskru.ac.th/ita/o1401.pdf",
+    "target": "_blank",
+    "images": [],
+    "type": "PDF",
+    "offset": 15194
+  },
+  {
+    "id": 41,
+    "label": "ระบบคลังหน่วยกิต",
+    "href": "ita/o1402.pdf",
+    "url": "https://www.oass.sskru.ac.th/ita/o1402.pdf",
+    "target": "_blank",
+    "images": [],
+    "type": "PDF",
+    "offset": 15435
+  },
+  {
+    "id": 42,
+    "label": "การตรวจสำเร็จการศึกษา",
+    "href": "ita/o1404.pdf",
+    "url": "https://www.oass.sskru.ac.th/ita/o1404.pdf",
+    "target": "_blank",
+    "images": [],
+    "type": "PDF",
+    "offset": 15672
+  },
+  {
+    "id": 43,
+    "label": "การจัดตารางเรียน-ตารางสอบ",
+    "href": "ita/o1407.pdf",
+    "url": "https://www.oass.sskru.ac.th/ita/o1407.pdf",
+    "target": "_blank",
+    "images": [],
+    "type": "PDF",
+    "offset": 15914
+  },
+  {
+    "id": 44,
+    "label": "แนะแนวการศึกษาต่อมหาวิทยาลัยราชภัฏศรีสะเกษ",
+    "href": "ita/o1406.pdf",
+    "url": "https://www.oass.sskru.ac.th/ita/o1406.pdf",
+    "target": "_blank",
+    "images": [],
+    "type": "PDF",
+    "offset": 16112
+  },
+  {
+    "id": 45,
+    "label": "ปฏิบัติงานลงทะเบียนเรียน",
+    "href": "text/natcharee.pdf",
+    "url": "https://www.oass.sskru.ac.th/text/natcharee.pdf",
+    "target": "_blank",
+    "images": [],
+    "type": "PDF",
+    "offset": 16320
+  },
+  {
+    "id": 46,
+    "label": "การประชาสัมพันธ์",
+    "href": "text/o1408.pdf",
+    "url": "https://www.oass.sskru.ac.th/text/o1408.pdf",
+    "target": "_blank",
+    "images": [],
+    "type": "PDF",
+    "offset": 16506
+  },
+  {
+    "id": 47,
+    "label": "บริหารจัดการงานธุรการฯ",
+    "href": "text/o1409.pdf",
+    "url": "https://www.oass.sskru.ac.th/text/o1409.pdf",
+    "target": "_blank",
+    "images": [],
+    "type": "PDF",
+    "offset": 16680
+  },
+  {
+    "id": 48,
+    "label": "งานประกันฯ ระดับสำนัก",
+    "href": "text/o1410.pdf",
+    "url": "https://www.oass.sskru.ac.th/text/o1410.pdf",
+    "target": "_blank",
+    "images": [],
+    "type": "PDF",
+    "offset": 16860
+  },
+  {
+    "id": 49,
+    "label": "MIS บริหารจัดการงบประมาณ",
+    "href": "text/o1411.pdf",
+    "url": "https://www.oass.sskru.ac.th/text/o1411.pdf",
+    "target": "_blank",
+    "images": [],
+    "type": "PDF",
+    "offset": 17039
+  },
+  {
+    "id": 50,
+    "label": "คู่มือMHESI-CISA SSKRU",
+    "href": "text/o1412.pdf",
+    "url": "https://www.oass.sskru.ac.th/text/o1412.pdf",
+    "target": "_blank",
+    "images": [],
+    "type": "PDF",
+    "offset": 17221
+  },
+  {
+    "id": 51,
+    "label": "การตรวจสอบผลการเรียน",
+    "href": "ita/Es01.pdf",
+    "url": "https://www.oass.sskru.ac.th/ita/Es01.pdf",
+    "target": "_blank",
+    "images": [],
+    "type": "PDF",
+    "offset": 17535
+  },
+  {
+    "id": 52,
+    "label": "เช็คตารางเรียน/ใช้ห้อง",
+    "href": "ita/Es02.pdf",
+    "url": "https://www.oass.sskru.ac.th/ita/Es02.pdf",
+    "target": "_blank",
+    "images": [],
+    "type": "PDF",
+    "offset": 17720
+  },
+  {
+    "id": 53,
+    "label": "พิมพ์ใบลงทะเบียน",
+    "href": "ita/Es03.pdf",
+    "url": "https://www.oass.sskru.ac.th/ita/Es03.pdf",
+    "target": "_blank",
+    "images": [],
+    "type": "PDF",
+    "offset": 17907
+  },
+  {
+    "id": 54,
+    "label": "การลงทะเบียนเรียน",
+    "href": "ita/o1501.pdf",
+    "url": "https://www.oass.sskru.ac.th/ita/o1501.pdf",
+    "target": "_blank",
+    "images": [],
+    "type": "PDF",
+    "offset": 18088
+  },
+  {
+    "id": 55,
+    "label": "การยกเลิกรายวิชาเรียน",
+    "href": "ita/o1502.pdf",
+    "url": "https://www.oass.sskru.ac.th/ita/o1502.pdf",
+    "target": "_blank",
+    "images": [],
+    "type": "PDF",
+    "offset": 18271
+  },
+  {
+    "id": 56,
+    "label": "การลงทะเบียนเรียนร่วมหมู่เรียนอื่น",
+    "href": "ita/o1503.pdf",
+    "url": "https://www.oass.sskru.ac.th/ita/o1503.pdf",
+    "target": "_blank",
+    "images": [],
+    "type": "PDF",
+    "offset": 18458
+  },
+  {
+    "id": 57,
+    "label": "การเปิดสอนกรณีพิเศษ",
+    "href": "ita/o1504.pdf",
+    "url": "https://www.oass.sskru.ac.th/ita/o1504.pdf",
+    "target": "_blank",
+    "images": [],
+    "type": "PDF",
+    "offset": 18658
+  },
+  {
+    "id": 58,
+    "label": "การลงทะเบียนเรียนซ้ำหรือเรียนแทน",
+    "href": "ita/o1505.pdf",
+    "url": "https://www.oass.sskru.ac.th/ita/o1505.pdf",
+    "target": "_blank",
+    "images": [],
+    "type": "PDF",
+    "offset": 18843
+  },
+  {
+    "id": 59,
+    "label": "เวรให้บริการหน้าเคาน์เตอร์ฯ 1/66",
+    "href": "text/od661.pdf",
+    "url": "https://www.oass.sskru.ac.th/text/od661.pdf",
+    "target": "_blank",
+    "images": [],
+    "type": "PDF",
+    "offset": 19196
+  },
+  {
+    "id": 60,
+    "label": "เวรให้บริการหน้าเคาน์เตอร์ฯ 2/66",
+    "href": "text/od662.pdf",
+    "url": "https://www.oass.sskru.ac.th/text/od662.pdf",
+    "target": "_blank",
+    "images": [],
+    "type": "PDF",
+    "offset": 19395
+  },
+  {
+    "id": 61,
+    "label": "เวรให้บริการหน้าเคาน์เตอร์ฯ 3/66",
+    "href": "text/od663.pdf",
+    "url": "https://www.oass.sskru.ac.th/text/od663.pdf",
+    "target": "_blank",
+    "images": [],
+    "type": "PDF",
+    "offset": 19594
+  },
+  {
+    "id": 62,
+    "label": "การลงเวลาปฏิบัตงาน",
+    "href": "text/odta.pdf",
+    "url": "https://www.oass.sskru.ac.th/text/odta.pdf",
+    "target": "_blank",
+    "images": [],
+    "type": "PDF",
+    "offset": 19793
+  },
+  {
+    "id": 63,
+    "label": "ปฏิทินการศึกษา 67 ปกติ",
+    "href": "text/671.pdf",
+    "url": "https://www.oass.sskru.ac.th/text/671.pdf",
+    "target": "_blank",
+    "images": [],
+    "type": "PDF",
+    "offset": 20201
+  },
+  {
+    "id": 64,
+    "label": "ปฏิทินการศึกษา 67 กศ.บป.",
+    "href": "text/672.pdf",
+    "url": "https://www.oass.sskru.ac.th/text/672.pdf",
+    "target": "_blank",
+    "images": [],
+    "type": "PDF",
+    "offset": 20481
+  },
+  {
+    "id": 65,
+    "label": "ปฏิทินการศึกษา 68 ปกติ",
+    "href": "text/681.pdf",
+    "url": "https://www.oass.sskru.ac.th/text/681.pdf",
+    "target": "_blank",
+    "images": [],
+    "type": "PDF",
+    "offset": 20760
+  },
+  {
+    "id": 66,
+    "label": "ปฏิทินการศึกษา 68 กศ.บป.",
+    "href": "text/682.pdf",
+    "url": "https://www.oass.sskru.ac.th/text/682.pdf",
+    "target": "_blank",
+    "images": [],
+    "type": "PDF",
+    "offset": 21040
+  },
+  {
+    "id": 67,
+    "label": "ปฏิทินภาคบัณฑิต 68 รหัส 67",
+    "href": "text/688867.pdf",
+    "url": "https://www.oass.sskru.ac.th/text/688867.pdf",
+    "target": "_blank",
+    "images": [],
+    "type": "PDF",
+    "offset": 21319
+  },
+  {
+    "id": 68,
+    "label": "ปฏิทินภาคบัณฑิต 68 รหัส 68",
+    "href": "text/688868.pdf",
+    "url": "https://www.oass.sskru.ac.th/text/688868.pdf",
+    "target": "_blank",
+    "images": [],
+    "type": "PDF",
+    "offset": 21603
+  },
+  {
+    "id": 69,
+    "label": "ปฏิทินการศึกษา 69 ปกติ",
+    "href": "text/cl691.pdf",
+    "url": "https://www.oass.sskru.ac.th/text/cl691.pdf",
+    "target": "_blank",
+    "images": [],
+    "type": "PDF",
+    "offset": 21887
+  },
+  {
+    "id": 70,
+    "label": "ปฏิทินการศึกษา 69 กศ.บป.",
+    "href": "text/cl692.pdf",
+    "url": "https://www.oass.sskru.ac.th/text/cl692.pdf",
+    "target": "_blank",
+    "images": [],
+    "type": "PDF",
+    "offset": 22166
+  },
+  {
+    "id": 71,
+    "label": "การให้บริการเอกสารทางการศึกษา",
+    "href": "https://forms.gle/iaCXajt9c7QbtRMHA",
+    "url": "https://forms.gle/iaCXajt9c7QbtRMHA",
+    "target": "_blank",
+    "images": [],
+    "type": "external",
+    "offset": 22584
+  },
+  {
+    "id": 72,
+    "label": "การลงทะเบียนเรียน",
+    "href": "https://forms.gle/RmBB92Rrem92UbfJA",
+    "url": "https://forms.gle/RmBB92Rrem92UbfJA",
+    "target": "_blank",
+    "images": [],
+    "type": "external",
+    "offset": 22891
+  },
+  {
+    "id": 73,
+    "label": "กระบวนการจัดการข้อร้องเรียน",
+    "href": "https://complaint-ssk.web.app/#/",
+    "url": "https://complaint-ssk.web.app/#/",
+    "target": "_blank",
+    "images": [],
+    "type": "external",
+    "offset": 23186
+  },
+  {
+    "id": 74,
+    "label": "การให้บริการ งานทะเบียนฯ",
+    "href": "https://forms.gle/5z3LKWK56strdXAk7",
+    "url": "https://forms.gle/5z3LKWK56strdXAk7",
+    "target": "_blank",
+    "images": [],
+    "type": "external",
+    "offset": 23488
+  },
+  {
+    "id": 75,
+    "label": "ความสุขในการทำงาน",
+    "href": "https://forms.gle/FdcKxfBY7Ug7d2tE6",
+    "url": "https://forms.gle/FdcKxfBY7Ug7d2tE6",
+    "target": "_blank",
+    "images": [],
+    "type": "external",
+    "offset": 23790
+  },
+  {
+    "id": 76,
+    "label": "ความพึงพอใจ ไม่พึงพอใจ ความผูกพัน",
+    "href": "https://forms.gle/k4xou8ovqTUuUh6z8",
+    "url": "https://forms.gle/k4xou8ovqTUuUh6z8",
+    "target": "_blank",
+    "images": [],
+    "type": "external",
+    "offset": 24085
+  },
+  {
+    "id": 77,
+    "label": "ความต้องการ ความคาดหวัง",
+    "href": "https://forms.gle/Pe9T46UMnnvFy5S78",
+    "url": "https://forms.gle/Pe9T46UMnnvFy5S78",
+    "target": "_blank",
+    "images": [],
+    "type": "external",
+    "offset": 24396
+  },
+  {
+    "id": 78,
+    "label": "การให้บริการตารางเรียน ตารางสอน",
+    "href": "https://forms.gle/KXKyvLFcpgbzXgPeA",
+    "url": "https://forms.gle/KXKyvLFcpgbzXgPeA",
+    "target": "_blank",
+    "images": [],
+    "type": "external",
+    "offset": 24697
+  },
+  {
+    "id": 79,
+    "label": "การรับสมัครนักศึกษาใหม่",
+    "href": "https://forms.gle/jEkRU8e4uSMCagj57",
+    "url": "https://forms.gle/jEkRU8e4uSMCagj57",
+    "target": "_blank",
+    "images": [],
+    "type": "external",
+    "offset": 25006
+  },
+  {
+    "id": 80,
+    "label": "มหาวิทยาลัยราชภัฏศรีสะเกษ ขอเชิญชวนผู้บริหารและบุคลากรจาก หน่วยงานราชการ / เอกชน / สถานศึกษา รวมถึง ประชาชนทั่วไปร่วมตอบแบบสำรวจความต้องการเข้ารับการฝึกอบรม",
+    "href": "https://www.facebook.com/ALPMSSKRUNEWSUPDATE/posts/pfbid02Kn985mxnkcxEDTbhGQobvd2tYPMoL6DkNGkHSb2F5FpEsBnioidR4HYrsMZaFaZil",
+    "url": "https://www.facebook.com/ALPMSSKRUNEWSUPDATE/posts/pfbid02Kn985mxnkcxEDTbhGQobvd2tYPMoL6DkNGkHSb2F5FpEsBnioidR4HYrsMZaFaZil",
+    "target": "_blank",
+    "images": [],
+    "type": "external",
+    "offset": 25791
+  },
+  {
+    "id": 81,
+    "label": "ขอเชิญผู้บริหารและบุคลากร มหาวิทยาลัยราชภัฏศรีสะเกษร่วมตอบแบบสำรวจความต้องการเข้ารับการฝึกอบรม",
+    "href": "https://www.facebook.com/ALPMSSKRUNEWSUPDATE/posts/pfbid0J1NiLHf2bFwg7yBfvmhMhJr3A3vMgWdqUpYoycdDUHbpv839vdqB55EYXYBpbaDEl",
+    "url": "https://www.facebook.com/ALPMSSKRUNEWSUPDATE/posts/pfbid0J1NiLHf2bFwg7yBfvmhMhJr3A3vMgWdqUpYoycdDUHbpv839vdqB55EYXYBpbaDEl",
+    "target": "_blank",
+    "images": [],
+    "type": "external",
+    "offset": 26334
+  },
+  {
+    "id": 82,
+    "label": "การติดต่อขอรับใบปริญญาบัตร (เข้ารับปี 2568)",
+    "href": "https://www.facebook.com/APLM2024/posts/pfbid02CWy4WbnqG9kUTmdWRtrtWBEK9pi3pQhBiP6NdTTyHKNyd2AJC79oWb7oxRpFnwgCl",
+    "url": "https://www.facebook.com/APLM2024/posts/pfbid02CWy4WbnqG9kUTmdWRtrtWBEK9pi3pQhBiP6NdTTyHKNyd2AJC79oWb7oxRpFnwgCl",
+    "target": "_blank",
+    "images": [],
+    "type": "external",
+    "offset": 26813
+  },
+  {
+    "id": 83,
+    "label": "[รูปภาพ: pic/new[1].gif]",
+    "href": "https://www.facebook.com/sskruconnect/posts/pfbid0wDVyidrtMBqPSgajimR1EQ5pMXjsjsx1BjKc1jagTr85K9opXaMcSu8BEd1CdWYWl",
+    "url": "https://www.facebook.com/sskruconnect/posts/pfbid0wDVyidrtMBqPSgajimR1EQ5pMXjsjsx1BjKc1jagTr85K9opXaMcSu8BEd1CdWYWl",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/new[1].gif",
+        "alt": ""
+      }
+    ],
+    "type": "external",
+    "offset": 26999
+  },
+  {
+    "id": 84,
+    "label": "รับสมัครนักศึกษาเพื่อคัดเลือกรับทุนการศึกษามูลนิธิทุนศึกษาสร้างฝัน Create Your Future Foundation (CYF) ภาคเรียนที่ 2 ประจำปีการศึกษา 2568",
+    "href": "https://www.sskru.ac.th/2026/01/05/รับสมัครนักศึกษาเพื่อค/",
+    "url": "https://www.sskru.ac.th/2026/01/05/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%AA%E0%B8%A1%E0%B8%B1%E0%B8%84%E0%B8%A3%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%A8%E0%B8%B6%E0%B8%81%E0%B8%A9%E0%B8%B2%E0%B9%80%E0%B8%9E%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%84/",
+    "target": "_blank",
+    "images": [],
+    "type": "external",
+    "offset": 27424
+  },
+  {
+    "id": 85,
+    "label": "วันพุธที่ 3 กันยายน 2568 เวลา 08.30 น. - 16.30 น. สำนักส่งเสริมวิชาการและจัดการเรียนรู้ตลอดชีวิต มหาวิทยาลัยราชภัฏศรีสะเกษ ได้จัดโครงการทบทวนสอบผลสัมฤทธิ์ของนักศึกษาตามมาตรฐานผลการเรียนรู้หมวดวิชาศึกษาทั่วไปณ ห้องประชุมชั้น 1 อาคารพัชรกิติยาภา สำนักส่งเสริมวิชาการและจัดการเรียนรู้ตลอดชีวิต",
+    "href": "https://www.facebook.com/ALPMSSKRUNEWSUPDATE/posts/pfbid035qDikA6s3nDP1Kfy9fZXwmNiFKApayJe5AsLmrk1A5deX1hQ8hTNGK8KsS6Pzac7l",
+    "url": "https://www.facebook.com/ALPMSSKRUNEWSUPDATE/posts/pfbid035qDikA6s3nDP1Kfy9fZXwmNiFKApayJe5AsLmrk1A5deX1hQ8hTNGK8KsS6Pzac7l",
+    "target": "_blank",
+    "images": [],
+    "type": "external",
+    "offset": 27883
+  },
+  {
+    "id": 86,
+    "label": "ขอแสดงความยินดีกับ รองศาสตราจารย์ ดร.ประกาศิต อานุภาพแสนยากร อธิการบดีมหาวิทยาลัยราชภัฏศรีสะเกษ ได้รับการคัดเลือกเข้ารับรางวัลยกย่องเชิดชูเกียรติ &quot;พ่อดีเด่นแห่งชาติ&quot;",
+    "href": "https://www.sskru.ac.th/ข่าวรอบรั้วมหาวิทยาลัย/ขอแสดงความยินดีกับ-รอง-2/",
+    "url": "https://www.sskru.ac.th/%E0%B8%82%E0%B9%88%E0%B8%B2%E0%B8%A7%E0%B8%A3%E0%B8%AD%E0%B8%9A%E0%B8%A3%E0%B8%B1%E0%B9%89%E0%B8%A7%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%A5%E0%B8%B1%E0%B8%A2/%E0%B8%82%E0%B8%AD%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%A2%E0%B8%B4%E0%B8%99%E0%B8%94%E0%B8%B5%E0%B8%81%E0%B8%B1%E0%B8%9A-%E0%B8%A3%E0%B8%AD%E0%B8%87-2/",
+    "target": "_blank",
+    "images": [],
+    "type": "external",
+    "offset": 28559
+  },
+  {
+    "id": 87,
+    "label": "[รูปภาพ: pic/annoicon.gif]",
+    "href": "https://www.sskru.ac.th/2025/12/23/แถลงข่าวการแข่งขันกีฬา/",
+    "url": "https://www.sskru.ac.th/2025/12/23/%E0%B9%81%E0%B8%96%E0%B8%A5%E0%B8%87%E0%B8%82%E0%B9%88%E0%B8%B2%E0%B8%A7%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%82%E0%B9%88%E0%B8%87%E0%B8%82%E0%B8%B1%E0%B8%99%E0%B8%81%E0%B8%B5%E0%B8%AC%E0%B8%B2/",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/annoicon.gif",
+        "alt": ""
+      }
+    ],
+    "type": "external",
+    "offset": 29004
+  },
+  {
+    "id": 88,
+    "label": "แถลงข่าวการแข่งขันกีฬา ศรีสะเกษเกมส์",
+    "href": "https://www.sskru.ac.th/2025/12/23/%e0%b9%81%e0%b8%96%e0%b8%a5%e0%b8%87%e0%b8%82%e0%b9%88%e0%b8%b2%e0%b8%a7%e0%b8%81%e0%b8%b2%e0%b8%a3%e0%b9%81%e0%b8%82%e0%b9%88%e0%b8%87%e0%b8%82%e0%b8%b1%e0%b8%99%e0%b8%81%e0%b8%b5%e0%b8%ac%e0%b8%b2/",
+    "url": "https://www.sskru.ac.th/2025/12/23/%e0%b9%81%e0%b8%96%e0%b8%a5%e0%b8%87%e0%b8%82%e0%b9%88%e0%b8%b2%e0%b8%a7%e0%b8%81%e0%b8%b2%e0%b8%a3%e0%b9%81%e0%b8%82%e0%b9%88%e0%b8%87%e0%b8%82%e0%b8%b1%e0%b8%99%e0%b8%81%e0%b8%b5%e0%b8%ac%e0%b8%b2/",
+    "target": "",
+    "images": [],
+    "type": "external",
+    "offset": 29158
+  },
+  {
+    "id": 89,
+    "label": "[รูปภาพ: pic/annoicon.gif]",
+    "href": "https://www.sskru.ac.th/2025/12/23/แถลงข่าวการแข่งขันกีฬา/",
+    "url": "https://www.sskru.ac.th/2025/12/23/%E0%B9%81%E0%B8%96%E0%B8%A5%E0%B8%87%E0%B8%82%E0%B9%88%E0%B8%B2%E0%B8%A7%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%82%E0%B9%88%E0%B8%87%E0%B8%82%E0%B8%B1%E0%B8%99%E0%B8%81%E0%B8%B5%E0%B8%AC%E0%B8%B2/",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/annoicon.gif",
+        "alt": ""
+      }
+    ],
+    "type": "external",
+    "offset": 29800
+  },
+  {
+    "id": 90,
+    "label": "สารสัมพันธ์ ขาว-ทอง เดือนธันวาคม 2568",
+    "href": "https://sskru365-my.sharepoint.com/.../IgAZIiwn6xU5Sp2auc...",
+    "url": "https://sskru365-my.sharepoint.com/.../IgAZIiwn6xU5Sp2auc...",
+    "target": "_blank",
+    "images": [],
+    "type": "external",
+    "offset": 29954
+  },
+  {
+    "id": 91,
+    "label": "วงโปงลางผกาลำดวน ได้รับรางวัลชมเชยอันดับ 2 การประกวดดนตรีพื้นบ้านวงโปงลางชิงถ้วยพระราชทานสมเด็จพระนางเจ้าสิริกิติ์ พระบรมราชินีนาถ พระบรมราชชนนีพันปีหลวง ประจำปี พ.ศ. 2568",
+    "href": "https://www.sskru.ac.th/ข่าวรอบรั้วมหาวิทยาลัย/วงโปงลางผกาลำดวน-ได้รับ/",
+    "url": "https://www.sskru.ac.th/%E0%B8%82%E0%B9%88%E0%B8%B2%E0%B8%A7%E0%B8%A3%E0%B8%AD%E0%B8%9A%E0%B8%A3%E0%B8%B1%E0%B9%89%E0%B8%A7%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%A5%E0%B8%B1%E0%B8%A2/%E0%B8%A7%E0%B8%87%E0%B9%82%E0%B8%9B%E0%B8%87%E0%B8%A5%E0%B8%B2%E0%B8%87%E0%B8%9C%E0%B8%81%E0%B8%B2%E0%B8%A5%E0%B8%B3%E0%B8%94%E0%B8%A7%E0%B8%99-%E0%B9%84%E0%B8%94%E0%B9%89%E0%B8%A3%E0%B8%B1%E0%B8%9A/",
+    "target": "_blank",
+    "images": [],
+    "type": "external",
+    "offset": 30314
+  },
+  {
+    "id": 92,
+    "label": "[รูปภาพ: pic/m8.gif]",
+    "href": "https://www.facebook.com/ALPMSSKRUNEWSUPDATE/posts/pfbid02y9Jh2HHPUpNDmNWjdtTjydgpvhN8ha6t5T51fRzdjPkWg2kf89KbfgD9MhvfC2wZl",
+    "url": "https://www.facebook.com/ALPMSSKRUNEWSUPDATE/posts/pfbid02y9Jh2HHPUpNDmNWjdtTjydgpvhN8ha6t5T51fRzdjPkWg2kf89KbfgD9MhvfC2wZl",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/m8.gif",
+        "alt": ""
+      }
+    ],
+    "type": "external",
+    "offset": 35331
+  },
+  {
+    "id": 93,
+    "label": "[รูปภาพ: pic/m8.gif]",
+    "href": "https://www.facebook.com/ALPMSSKRUNEWSUPDATE/posts/pfbid02VZGXYzfKwNice1L9B3zsrCvLAZtNVKHgw9dX8zn7nrvqpaAxVKtAE2hjAWqGQHfel",
+    "url": "https://www.facebook.com/ALPMSSKRUNEWSUPDATE/posts/pfbid02VZGXYzfKwNice1L9B3zsrCvLAZtNVKHgw9dX8zn7nrvqpaAxVKtAE2hjAWqGQHfel",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/m8.gif",
+        "alt": ""
+      }
+    ],
+    "type": "external",
+    "offset": 36107
+  },
+  {
+    "id": 94,
+    "label": "[รูปภาพ: pic/m8.gif]",
+    "href": "https://www.facebook.com/ALPMSSKRUNEWSUPDATE/posts/pfbid0XxQN9ejTx4FHUN1cVEM8m28T6hhJqRjFVB7aqVYLSeFr757CLs2TsePjbVS8TJaEl",
+    "url": "https://www.facebook.com/ALPMSSKRUNEWSUPDATE/posts/pfbid0XxQN9ejTx4FHUN1cVEM8m28T6hhJqRjFVB7aqVYLSeFr757CLs2TsePjbVS8TJaEl",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/m8.gif",
+        "alt": ""
+      }
+    ],
+    "type": "external",
+    "offset": 36921
+  },
+  {
+    "id": 95,
+    "label": "[รูปภาพ: pic/m8.gif]",
+    "href": "https://www.facebook.com/ALPMSSKRUNEWSUPDATE/posts/pfbid02g3Ey4Uun1b1f95PDs6A6R9qA48SLrQTWCfjafDsmkLXvrKU3ehuNCixAVYNckhb5l",
+    "url": "https://www.facebook.com/ALPMSSKRUNEWSUPDATE/posts/pfbid02g3Ey4Uun1b1f95PDs6A6R9qA48SLrQTWCfjafDsmkLXvrKU3ehuNCixAVYNckhb5l",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/m8.gif",
+        "alt": ""
+      }
+    ],
+    "type": "external",
+    "offset": 37636
+  },
+  {
+    "id": 96,
+    "label": "[รูปภาพ: pic/m8.gif]",
+    "href": "https://www.facebook.com/ALPMSSKRUNEWSUPDATE/posts/pfbid026tVFy5QbJ6FFE9g6q9AaGcWKtESt1YSR9h3mdtnijEpmbJJu7DEuTp2szXqBWyRHl",
+    "url": "https://www.facebook.com/ALPMSSKRUNEWSUPDATE/posts/pfbid026tVFy5QbJ6FFE9g6q9AaGcWKtESt1YSR9h3mdtnijEpmbJJu7DEuTp2szXqBWyRHl",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/m8.gif",
+        "alt": ""
+      }
+    ],
+    "type": "external",
+    "offset": 38354
+  },
+  {
+    "id": 97,
+    "label": "[รูปภาพ: pic/m8.gif]",
+    "href": "https://www.facebook.com/ALPMSSKRUNEWSUPDATE/posts/pfbid02tPssb9qn8aBewk4Nx3W2jf612tNgpB4F2Ly95PmtPjwVHVRf2eGFi5uErQvq7ALJl",
+    "url": "https://www.facebook.com/ALPMSSKRUNEWSUPDATE/posts/pfbid02tPssb9qn8aBewk4Nx3W2jf612tNgpB4F2Ly95PmtPjwVHVRf2eGFi5uErQvq7ALJl",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/m8.gif",
+        "alt": ""
+      }
+    ],
+    "type": "external",
+    "offset": 39180
+  },
+  {
+    "id": 98,
+    "label": "[รูปภาพ: pic/m8.gif]",
+    "href": "https://www.facebook.com/ALPMSSKRUNEWSUPDATE/posts/pfbid02ac4WHakCjc9DSz3hWYyRw1Vqs4jvMeRR6RpLdSk5P18kCNKtyZ2nBULSa7K3nQCFl",
+    "url": "https://www.facebook.com/ALPMSSKRUNEWSUPDATE/posts/pfbid02ac4WHakCjc9DSz3hWYyRw1Vqs4jvMeRR6RpLdSk5P18kCNKtyZ2nBULSa7K3nQCFl",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/m8.gif",
+        "alt": ""
+      }
+    ],
+    "type": "external",
+    "offset": 40066
+  },
+  {
+    "id": 99,
+    "label": "[รูปภาพ: pic/m8.gif]",
+    "href": "https://www.facebook.com/ALPMSSKRUNEWSUPDATE/posts/pfbid0mhXZoguNHP7sroLdFQpTAH6kXnmyNpBKd9mNVcM4nj9x7senUQDb2pwPayRy2nWol",
+    "url": "https://www.facebook.com/ALPMSSKRUNEWSUPDATE/posts/pfbid0mhXZoguNHP7sroLdFQpTAH6kXnmyNpBKd9mNVcM4nj9x7senUQDb2pwPayRy2nWol",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/m8.gif",
+        "alt": ""
+      }
+    ],
+    "type": "external",
+    "offset": 40864
+  },
+  {
+    "id": 100,
+    "label": "[รูปภาพ: pic/m8.gif]",
+    "href": "https://www.facebook.com/ALPMSSKRUNEWSUPDATE/posts/pfbid0ZA5YwicaQu1hHkDZFs1ms5mSN6LpLTnhNukfzmWw5Hh3LZEbPYzB2BuJWFFFrabul",
+    "url": "https://www.facebook.com/ALPMSSKRUNEWSUPDATE/posts/pfbid0ZA5YwicaQu1hHkDZFs1ms5mSN6LpLTnhNukfzmWw5Hh3LZEbPYzB2BuJWFFFrabul",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/m8.gif",
+        "alt": ""
+      }
+    ],
+    "type": "external",
+    "offset": 41563
+  },
+  {
+    "id": 101,
+    "label": "[รูปภาพ: pic/m8.gif]",
+    "href": "https://www.facebook.com/ALPMSSKRUNEWSUPDATE/posts/pfbid08MtgE29cYt3bVtXKErQvWcEMQc2dWjZVthGs3qUiw2PxZJBSELs1Dc4EWYr63VvEl",
+    "url": "https://www.facebook.com/ALPMSSKRUNEWSUPDATE/posts/pfbid08MtgE29cYt3bVtXKErQvWcEMQc2dWjZVthGs3qUiw2PxZJBSELs1Dc4EWYr63VvEl",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/m8.gif",
+        "alt": ""
+      }
+    ],
+    "type": "external",
+    "offset": 42226
+  },
+  {
+    "id": 102,
+    "label": "[รูปภาพ: pic/m8.gif]",
+    "href": "https://sites.google.com/sskru.ac.th/aplmsskru031168",
+    "url": "https://sites.google.com/sskru.ac.th/aplmsskru031168",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/m8.gif",
+        "alt": ""
+      }
+    ],
+    "type": "external",
+    "offset": 43047
+  },
+  {
+    "id": 103,
+    "label": "[รูปภาพ: pic/m8.gif]",
+    "href": "https://www.facebook.com/ALPMSSKRUNEWSUPDATE/posts/pfbid0WBkEK9HKHUjAJnzhdRr6ppduLkazsTiLucwNv5k5xAWMAAUsj7Ehxm84Bgajr7K1l",
+    "url": "https://www.facebook.com/ALPMSSKRUNEWSUPDATE/posts/pfbid0WBkEK9HKHUjAJnzhdRr6ppduLkazsTiLucwNv5k5xAWMAAUsj7Ehxm84Bgajr7K1l",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/m8.gif",
+        "alt": ""
+      }
+    ],
+    "type": "external",
+    "offset": 43828
+  },
+  {
+    "id": 104,
+    "label": "[รูปภาพ: pic/m8.gif]",
+    "href": "https://www.facebook.com/ALPMSSKRUNEWSUPDATE/posts/pfbid02v73LcQnEw2wyKiipiGrUdxg9789nyzhfJ8WaXseqZxU1EQPKqD3b2pZ4DohmNo5ul",
+    "url": "https://www.facebook.com/ALPMSSKRUNEWSUPDATE/posts/pfbid02v73LcQnEw2wyKiipiGrUdxg9789nyzhfJ8WaXseqZxU1EQPKqD3b2pZ4DohmNo5ul",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/m8.gif",
+        "alt": ""
+      }
+    ],
+    "type": "external",
+    "offset": 44820
+  },
+  {
+    "id": 105,
+    "label": "[รูปภาพ: pic/m8.gif]",
+    "href": "https://www.facebook.com/ALPMSSKRUNEWSUPDATE/posts/pfbid02Wc6fmt3o3C1JuFDY8yhHDfr9PGkapVTyW85mnP61MFVAkMtoNQM2tzhBcATAEW3jl",
+    "url": "https://www.facebook.com/ALPMSSKRUNEWSUPDATE/posts/pfbid02Wc6fmt3o3C1JuFDY8yhHDfr9PGkapVTyW85mnP61MFVAkMtoNQM2tzhBcATAEW3jl",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/m8.gif",
+        "alt": ""
+      }
+    ],
+    "type": "external",
+    "offset": 45837
+  },
+  {
+    "id": 106,
+    "label": "[รูปภาพ: pic/m8.gif]",
+    "href": "https://www.facebook.com/ALPMSSKRUNEWSUPDATE/posts/pfbid031s7ccNWpp3crKD5E1HNEWqFmcm1WwVLA3hAcoxmDMp5Dyj8wbK5c3KngeYmJyxArl",
+    "url": "https://www.facebook.com/ALPMSSKRUNEWSUPDATE/posts/pfbid031s7ccNWpp3crKD5E1HNEWqFmcm1WwVLA3hAcoxmDMp5Dyj8wbK5c3KngeYmJyxArl",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/m8.gif",
+        "alt": ""
+      }
+    ],
+    "type": "external",
+    "offset": 46637
+  },
+  {
+    "id": 107,
+    "label": "[รูปภาพ: pic/m8.gif]",
+    "href": "https://www.facebook.com/ALPMSSKRUNEWSUPDATE/posts/pfbid08g28LRo6piGdWRxd4LNQfjZGFYuUQyYsccGgBWqEDqWFYDbpTG9HYGdAJajpAxpMl",
+    "url": "https://www.facebook.com/ALPMSSKRUNEWSUPDATE/posts/pfbid08g28LRo6piGdWRxd4LNQfjZGFYuUQyYsccGgBWqEDqWFYDbpTG9HYGdAJajpAxpMl",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/m8.gif",
+        "alt": ""
+      }
+    ],
+    "type": "external",
+    "offset": 47322
+  },
+  {
+    "id": 108,
+    "label": "[รูปภาพ: pic/m8.gif]",
+    "href": "https://www.facebook.com/ALPMSSKRUNEWSUPDATE/posts/pfbid02pq9FwW8Qj6FhBGXd2twyh1SrVA5EUEc2REzFHG9tfwK3rVU3734roodzpyt8wteol",
+    "url": "https://www.facebook.com/ALPMSSKRUNEWSUPDATE/posts/pfbid02pq9FwW8Qj6FhBGXd2twyh1SrVA5EUEc2REzFHG9tfwK3rVU3734roodzpyt8wteol",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/m8.gif",
+        "alt": ""
+      }
+    ],
+    "type": "external",
+    "offset": 48070
+  },
+  {
+    "id": 109,
+    "label": "[รูปภาพ: pic/m8.gif]",
+    "href": "https://www.facebook.com/ALPMSSKRUNEWSUPDATE/posts/pfbid0L6GdfQWSTG9ZCuzAWS5nBF3WbfSecNqkv8r47ye1TGwEEXs9fDVWUqppPsdUFLstl",
+    "url": "https://www.facebook.com/ALPMSSKRUNEWSUPDATE/posts/pfbid0L6GdfQWSTG9ZCuzAWS5nBF3WbfSecNqkv8r47ye1TGwEEXs9fDVWUqppPsdUFLstl",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/m8.gif",
+        "alt": ""
+      }
+    ],
+    "type": "external",
+    "offset": 48757
+  },
+  {
+    "id": 110,
+    "label": "[รูปภาพ: pic/m8.gif]",
+    "href": "https://www.facebook.com/ALPMSSKRUNEWSUPDATE/posts/pfbid02jSN9b4ZssxVqFMuP3MGdLmUiDQbXe5aRTbixmaSNuyocnR2uymZ8LksqfAjisKr2l",
+    "url": "https://www.facebook.com/ALPMSSKRUNEWSUPDATE/posts/pfbid02jSN9b4ZssxVqFMuP3MGdLmUiDQbXe5aRTbixmaSNuyocnR2uymZ8LksqfAjisKr2l",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/m8.gif",
+        "alt": ""
+      }
+    ],
+    "type": "external",
+    "offset": 49723
+  },
+  {
+    "id": 111,
+    "label": "[รูปภาพ: pic/m8.gif]",
+    "href": "https://www.facebook.com/ALPMSSKRUNEWSUPDATE/posts/pfbid0vDV7fbD78yShSnvN8uVcz68trtfevB3epqonx21F2Gb44L6dPEuSXT8fgdxHoR1Pl",
+    "url": "https://www.facebook.com/ALPMSSKRUNEWSUPDATE/posts/pfbid0vDV7fbD78yShSnvN8uVcz68trtfevB3epqonx21F2Gb44L6dPEuSXT8fgdxHoR1Pl",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/m8.gif",
+        "alt": ""
+      }
+    ],
+    "type": "external",
+    "offset": 50567
+  },
+  {
+    "id": 112,
+    "label": "[รูปภาพ: pic/m8.gif]",
+    "href": "https://www.facebook.com/ALPMSSKRUNEWSUPDATE/posts/pfbid02guohJKMRqudBTrk5QfUhgK6JUaJu7rrmkPWfpD71WntvvDqNxj6cHi4NFnmuy6znl",
+    "url": "https://www.facebook.com/ALPMSSKRUNEWSUPDATE/posts/pfbid02guohJKMRqudBTrk5QfUhgK6JUaJu7rrmkPWfpD71WntvvDqNxj6cHi4NFnmuy6znl",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/m8.gif",
+        "alt": ""
+      }
+    ],
+    "type": "external",
+    "offset": 51294
+  },
+  {
+    "id": 113,
+    "label": "[รูปภาพ: pic/m8.gif]",
+    "href": "https://www.facebook.com/ALPMSSKRUNEWSUPDATE/posts/pfbid036y5G1br4hHkhiDg9A2DAhiUGoffTrSMAZngKdgKHz3zJR1uMGhhzwoceGZun4vYSl",
+    "url": "https://www.facebook.com/ALPMSSKRUNEWSUPDATE/posts/pfbid036y5G1br4hHkhiDg9A2DAhiUGoffTrSMAZngKdgKHz3zJR1uMGhhzwoceGZun4vYSl",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/m8.gif",
+        "alt": ""
+      }
+    ],
+    "type": "external",
+    "offset": 52001
+  },
+  {
+    "id": 114,
+    "label": "[รูปภาพ: pic/m8.gif]",
+    "href": "https://www.facebook.com/ALPMSSKRUNEWSUPDATE/posts/pfbid024f5FLv3fBG7DBsZ7TDQTq9vbpUQLoReRqGfUpPetRJNKDQPKYQrHC6jzm6MxphUzl",
+    "url": "https://www.facebook.com/ALPMSSKRUNEWSUPDATE/posts/pfbid024f5FLv3fBG7DBsZ7TDQTq9vbpUQLoReRqGfUpPetRJNKDQPKYQrHC6jzm6MxphUzl",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/m8.gif",
+        "alt": ""
+      }
+    ],
+    "type": "external",
+    "offset": 52717
+  },
+  {
+    "id": 115,
+    "label": "[รูปภาพ: pic/m8.gif]",
+    "href": "https://www.facebook.com/ALPMSSKRUNEWSUPDATE/posts/pfbid02G5YRSJGYfcGWX81fYfbm497BNYCHPcvwEiAKX7Ps5suioBEQmXB7CuY8jpDvdDUyl",
+    "url": "https://www.facebook.com/ALPMSSKRUNEWSUPDATE/posts/pfbid02G5YRSJGYfcGWX81fYfbm497BNYCHPcvwEiAKX7Ps5suioBEQmXB7CuY8jpDvdDUyl",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/m8.gif",
+        "alt": ""
+      }
+    ],
+    "type": "external",
+    "offset": 53358
+  },
+  {
+    "id": 116,
+    "label": "[รูปภาพ: pic/m8.gif]",
+    "href": "https://www.facebook.com/ALPMSSKRUNEWSUPDATE/posts/pfbid02RHoG7kS2FXkk8JgWsKYQwgwetoHEaqNb7SD6aueczCztJkGfpS8DAQwpVD1qHsdjl",
+    "url": "https://www.facebook.com/ALPMSSKRUNEWSUPDATE/posts/pfbid02RHoG7kS2FXkk8JgWsKYQwgwetoHEaqNb7SD6aueczCztJkGfpS8DAQwpVD1qHsdjl",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/m8.gif",
+        "alt": ""
+      }
+    ],
+    "type": "external",
+    "offset": 54242
+  },
+  {
+    "id": 117,
+    "label": "[รูปภาพ: pic/m8.gif]",
+    "href": "https://www.facebook.com/ALPMSSKRUNEWSUPDATE/posts/pfbid0hPyx6bLLxMqPisMaAopmM99SFZ2UaC3ztGRNJegTtC8AQBUApwiy8fre2JAupm4bl",
+    "url": "https://www.facebook.com/ALPMSSKRUNEWSUPDATE/posts/pfbid0hPyx6bLLxMqPisMaAopmM99SFZ2UaC3ztGRNJegTtC8AQBUApwiy8fre2JAupm4bl",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/m8.gif",
+        "alt": ""
+      }
+    ],
+    "type": "external",
+    "offset": 55011
+  },
+  {
+    "id": 118,
+    "label": "[รูปภาพ: pic/m8.gif]",
+    "href": "https://www.facebook.com/ALPMSSKRUNEWSUPDATE/posts/pfbid0fLwgqgg133Arj9HEDijiHeaZdBHEMKk6f9ZgFtQh6Prc3hcrKV2KtjEJGkkLNDUyl",
+    "url": "https://www.facebook.com/ALPMSSKRUNEWSUPDATE/posts/pfbid0fLwgqgg133Arj9HEDijiHeaZdBHEMKk6f9ZgFtQh6Prc3hcrKV2KtjEJGkkLNDUyl",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/m8.gif",
+        "alt": ""
+      }
+    ],
+    "type": "external",
+    "offset": 55718
+  },
+  {
+    "id": 119,
+    "label": "[รูปภาพ: pic/m8.gif]",
+    "href": "https://www.facebook.com/ALPMSSKRUNEWSUPDATE/posts/pfbid02BL7c1ApwKasFY976r2M55VHGyxDncsu5Vq1emMuZKFq6KKATZRuFcK9c81HM2zWKl",
+    "url": "https://www.facebook.com/ALPMSSKRUNEWSUPDATE/posts/pfbid02BL7c1ApwKasFY976r2M55VHGyxDncsu5Vq1emMuZKFq6KKATZRuFcK9c81HM2zWKl",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/m8.gif",
+        "alt": ""
+      }
+    ],
+    "type": "external",
+    "offset": 56478
+  },
+  {
+    "id": 120,
+    "label": "[รูปภาพ: pic/aplm2025.jpg]",
+    "href": "https://complaint-ssk.web.app/",
+    "url": "https://complaint-ssk.web.app/",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/aplm2025.jpg",
+        "alt": ""
+      }
+    ],
+    "type": "external",
+    "offset": 56967
+  },
+  {
+    "id": 121,
+    "label": "[รูปภาพ: pic/fbof.jpg]",
+    "href": "https://www.facebook.com/OASSSSKRUNEWSUPDATE",
+    "url": "https://www.facebook.com/OASSSSKRUNEWSUPDATE",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/fbof.jpg",
+        "alt": ""
+      }
+    ],
+    "type": "external",
+    "offset": 57187
+  },
+  {
+    "id": 122,
+    "label": "ประวัติ",
+    "href": "oass1.html",
+    "url": "https://www.oass.sskru.ac.th/oass1.html",
+    "target": "_blank",
+    "images": [],
+    "type": "internal",
+    "offset": 57594
+  },
+  {
+    "id": 123,
+    "label": "ปรัชญา/วิสัยทัศน์/พันธกิจ",
+    "href": "oass2.html",
+    "url": "https://www.oass.sskru.ac.th/oass2.html",
+    "target": "_blank",
+    "images": [],
+    "type": "internal",
+    "offset": 57823
+  },
+  {
+    "id": 124,
+    "label": "ตราประจำสำนักและความหมาย",
+    "href": "oass3.html",
+    "url": "https://www.oass.sskru.ac.th/oass3.html",
+    "target": "_blank",
+    "images": [],
+    "type": "internal",
+    "offset": 58077
+  },
+  {
+    "id": 125,
+    "label": "โครงสร้างการบริหาร",
+    "href": "oass4.html",
+    "url": "https://www.oass.sskru.ac.th/oass4.html",
+    "target": "_blank",
+    "images": [],
+    "type": "internal",
+    "offset": 58330
+  },
+  {
+    "id": 126,
+    "label": "ข้อมูลบุคลากร",
+    "href": "oass5.html",
+    "url": "https://www.oass.sskru.ac.th/oass5.html",
+    "target": "_blank",
+    "images": [],
+    "type": "internal",
+    "offset": 58577
+  },
+  {
+    "id": 127,
+    "label": "ยุทธศาสตร์สำนัก",
+    "href": "oass6.html",
+    "url": "https://www.oass.sskru.ac.th/oass6.html",
+    "target": "_blank",
+    "images": [],
+    "type": "internal",
+    "offset": 58819
+  },
+  {
+    "id": 128,
+    "label": "การปฏิบัติตามแผน",
+    "href": "oass7.html",
+    "url": "https://www.oass.sskru.ac.th/oass7.html",
+    "target": "_blank",
+    "images": [],
+    "type": "internal",
+    "offset": 59065
+  },
+  {
+    "id": 129,
+    "label": "[รูปภาพ: pic/box.gif]",
+    "href": "EdPExAPLM/APLMEdPEx681OP.html",
+    "url": "https://www.oass.sskru.ac.th/EdPExAPLM/APLMEdPEx681OP.html",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/box.gif",
+        "alt": ""
+      }
+    ],
+    "type": "internal",
+    "offset": 59412
+  },
+  {
+    "id": 130,
+    "label": "โครงร่างองค์กร",
+    "href": "EdPExAPLM/APLMEdPEx681OP.html",
+    "url": "https://www.oass.sskru.ac.th/EdPExAPLM/APLMEdPEx681OP.html",
+    "target": "_blank",
+    "images": [],
+    "type": "internal",
+    "offset": 59535
+  },
+  {
+    "id": 131,
+    "label": "[รูปภาพ: pic/box.gif]",
+    "href": "EdPExAPLM/APLMEdPEx682M1.html",
+    "url": "https://www.oass.sskru.ac.th/EdPExAPLM/APLMEdPEx682M1.html",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/box.gif",
+        "alt": ""
+      }
+    ],
+    "type": "internal",
+    "offset": 59736
+  },
+  {
+    "id": 132,
+    "label": "หมวด 1 การนำองค์กร",
+    "href": "EdPExAPLM/APLMEdPEx682M1.html",
+    "url": "https://www.oass.sskru.ac.th/EdPExAPLM/APLMEdPEx682M1.html",
+    "target": "_blank",
+    "images": [],
+    "type": "internal",
+    "offset": 59859
+  },
+  {
+    "id": 133,
+    "label": "[รูปภาพ: pic/box.gif]",
+    "href": "EdPExAPLM/APLMEdPEx683M2.html",
+    "url": "https://www.oass.sskru.ac.th/EdPExAPLM/APLMEdPEx683M2.html",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/box.gif",
+        "alt": ""
+      }
+    ],
+    "type": "internal",
+    "offset": 60064
+  },
+  {
+    "id": 134,
+    "label": "หมวด 2 กลยุทธ์",
+    "href": "EdPExAPLM/APLMEdPEx683M2.html",
+    "url": "https://www.oass.sskru.ac.th/EdPExAPLM/APLMEdPEx683M2.html",
+    "target": "_blank",
+    "images": [],
+    "type": "internal",
+    "offset": 60186
+  },
+  {
+    "id": 135,
+    "label": "[รูปภาพ: pic/box.gif]",
+    "href": "EdPExAPLM/APLMEdPEx684M3.html",
+    "url": "https://www.oass.sskru.ac.th/EdPExAPLM/APLMEdPEx684M3.html",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/box.gif",
+        "alt": ""
+      }
+    ],
+    "type": "internal",
+    "offset": 60388
+  },
+  {
+    "id": 136,
+    "label": "หมวด 3 ลูกค้า",
+    "href": "EdPExAPLM/APLMEdPEx684M3.html",
+    "url": "https://www.oass.sskru.ac.th/EdPExAPLM/APLMEdPEx684M3.html",
+    "target": "_blank",
+    "images": [],
+    "type": "internal",
+    "offset": 60511
+  },
+  {
+    "id": 137,
+    "label": "[รูปภาพ: pic/box.gif]",
+    "href": "EdPExAPLM/APLMEdPEx685M4.html",
+    "url": "https://www.oass.sskru.ac.th/EdPExAPLM/APLMEdPEx685M4.html",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/box.gif",
+        "alt": ""
+      }
+    ],
+    "type": "internal",
+    "offset": 60711
+  },
+  {
+    "id": 138,
+    "label": "หมวด 4 การวัดฯ",
+    "href": "EdPExAPLM/APLMEdPEx685M4.html",
+    "url": "https://www.oass.sskru.ac.th/EdPExAPLM/APLMEdPEx685M4.html",
+    "target": "_blank",
+    "images": [],
+    "type": "internal",
+    "offset": 60834
+  },
+  {
+    "id": 139,
+    "label": "[รูปภาพ: pic/box.gif]",
+    "href": "EdPExAPLM/APLMEdPEx686M5.html",
+    "url": "https://www.oass.sskru.ac.th/EdPExAPLM/APLMEdPEx686M5.html",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/box.gif",
+        "alt": ""
+      }
+    ],
+    "type": "internal",
+    "offset": 61035
+  },
+  {
+    "id": 140,
+    "label": "หมวด 5 บุคลากร",
+    "href": "EdPExAPLM/APLMEdPEx686M5.html",
+    "url": "https://www.oass.sskru.ac.th/EdPExAPLM/APLMEdPEx686M5.html",
+    "target": "_blank",
+    "images": [],
+    "type": "internal",
+    "offset": 61158
+  },
+  {
+    "id": 141,
+    "label": "[รูปภาพ: pic/box.gif]",
+    "href": "EdPExAPLM/APLMEdPEx687M6.html",
+    "url": "https://www.oass.sskru.ac.th/EdPExAPLM/APLMEdPEx687M6.html",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/box.gif",
+        "alt": ""
+      }
+    ],
+    "type": "internal",
+    "offset": 61359
+  },
+  {
+    "id": 142,
+    "label": "หมวด 6 การปฏิบัติการ",
+    "href": "EdPExAPLM/APLMEdPEx687M6.html",
+    "url": "https://www.oass.sskru.ac.th/EdPExAPLM/APLMEdPEx687M6.html",
+    "target": "_blank",
+    "images": [],
+    "type": "internal",
+    "offset": 61482
+  },
+  {
+    "id": 143,
+    "label": "[รูปภาพ: pic/box.gif]",
+    "href": "EdPExAPLM/APLMEdPEx688M7.html",
+    "url": "https://www.oass.sskru.ac.th/EdPExAPLM/APLMEdPEx688M7.html",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/box.gif",
+        "alt": ""
+      }
+    ],
+    "type": "internal",
+    "offset": 61687
+  },
+  {
+    "id": 144,
+    "label": "หมวด 7 ผลลัพธ์",
+    "href": "EdPExAPLM/APLMEdPEx688M7.html",
+    "url": "https://www.oass.sskru.ac.th/EdPExAPLM/APLMEdPEx688M7.html",
+    "target": "_blank",
+    "images": [],
+    "type": "internal",
+    "offset": 61810
+  },
+  {
+    "id": 145,
+    "label": "[รูปภาพ: pic/thai.png]",
+    "href": "ita/68itaaplm1.pdf",
+    "url": "https://www.oass.sskru.ac.th/ita/68itaaplm1.pdf",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/thai.png",
+        "alt": ""
+      }
+    ],
+    "type": "PDF",
+    "offset": 62200
+  },
+  {
+    "id": 146,
+    "label": "ประกาศเจตนารมณ์ นโยบาย No Gift Policy",
+    "href": "ita/690.pdf",
+    "url": "https://www.oass.sskru.ac.th/ita/690.pdf",
+    "target": "_blank",
+    "images": [],
+    "type": "PDF",
+    "offset": 62322
+  },
+  {
+    "id": 147,
+    "label": "[รูปภาพ: pic/thai.png]",
+    "href": "ita/68itaaplm2.pdf",
+    "url": "https://www.oass.sskru.ac.th/ita/68itaaplm2.pdf",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/thai.png",
+        "alt": ""
+      }
+    ],
+    "type": "PDF",
+    "offset": 62574
+  },
+  {
+    "id": 148,
+    "label": "[รูปภาพ: ]",
+    "href": "text/itaoass2.pdf",
+    "url": "https://www.oass.sskru.ac.th/text/itaoass2.pdf",
+    "target": "_blank",
+    "images": [],
+    "type": "PDF",
+    "offset": 62678
+  },
+  {
+    "id": 149,
+    "label": "ประกาศเจตจำนงสุจริต เสริมสร้างคุณธรรมและความโปร่งใส",
+    "href": "ita/691.pdf",
+    "url": "https://www.oass.sskru.ac.th/ita/691.pdf",
+    "target": "_blank",
+    "images": [],
+    "type": "PDF",
+    "offset": 62743
+  },
+  {
+    "id": 150,
+    "label": "[รูปภาพ: ]",
+    "href": "text/itaeng672.pdf",
+    "url": "https://www.oass.sskru.ac.th/text/itaeng672.pdf",
+    "target": "_blank",
+    "images": [],
+    "type": "PDF",
+    "offset": 62837
+  },
+  {
+    "id": 151,
+    "label": "[รูปภาพ: pic/thai.png]",
+    "href": "text/itaoass3.pdf",
+    "url": "https://www.oass.sskru.ac.th/text/itaoass3.pdf",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/thai.png",
+        "alt": ""
+      }
+    ],
+    "type": "PDF",
+    "offset": 63075
+  },
+  {
+    "id": 152,
+    "label": "ประกาศนโยบาย การจัดการเรื่องร้องเรียน",
+    "href": "ita/692.pdf",
+    "url": "https://www.oass.sskru.ac.th/ita/692.pdf",
+    "target": "_blank",
+    "images": [],
+    "type": "PDF",
+    "offset": 63178
+  },
+  {
+    "id": 153,
+    "label": "[รูปภาพ: pic/thai.png]",
+    "href": "text/itaoass4.pdf",
+    "url": "https://www.oass.sskru.ac.th/text/itaoass4.pdf",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/thai.png",
+        "alt": ""
+      }
+    ],
+    "type": "PDF",
+    "offset": 63446
+  },
+  {
+    "id": 154,
+    "label": "ประกาศนโยบาย การจัดซื้อจัดจ้าง",
+    "href": "ita/693.pdf",
+    "url": "https://www.oass.sskru.ac.th/ita/693.pdf",
+    "target": "_blank",
+    "images": [],
+    "type": "PDF",
+    "offset": 63549
+  },
+  {
+    "id": 155,
+    "label": "[รูปภาพ: pic/thai.png]",
+    "href": "text/itaoass5.pdf",
+    "url": "https://www.oass.sskru.ac.th/text/itaoass5.pdf",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/thai.png",
+        "alt": ""
+      }
+    ],
+    "type": "PDF",
+    "offset": 63810
+  },
+  {
+    "id": 156,
+    "label": "ประกาศนโยบาย การป้องกันผลประโยชน์ทับซ้อน ของบุคลากร",
+    "href": "ita/694.pdf",
+    "url": "https://www.oass.sskru.ac.th/ita/694.pdf",
+    "target": "_blank",
+    "images": [],
+    "type": "PDF",
+    "offset": 63913
+  },
+  {
+    "id": 157,
+    "label": "[รูปภาพ: pic/thai.png]",
+    "href": "text/itaoass6.pdf",
+    "url": "https://www.oass.sskru.ac.th/text/itaoass6.pdf",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/thai.png",
+        "alt": ""
+      }
+    ],
+    "type": "PDF",
+    "offset": 64195
+  },
+  {
+    "id": 158,
+    "label": "ประกาศนโยบายการเปิดเผยข้อมูล",
+    "href": "ita/695.pdf",
+    "url": "https://www.oass.sskru.ac.th/ita/695.pdf",
+    "target": "_blank",
+    "images": [],
+    "type": "PDF",
+    "offset": 64298
+  },
+  {
+    "id": 159,
+    "label": "[รูปภาพ: pic/thai.png]",
+    "href": "text/itaoass7.pdf",
+    "url": "https://www.oass.sskru.ac.th/text/itaoass7.pdf",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/thai.png",
+        "alt": ""
+      }
+    ],
+    "type": "PDF",
+    "offset": 64557
+  },
+  {
+    "id": 160,
+    "label": "ประกาศการให้ภาคประชาชน หรือผู้มีส่วนได้ส่วนเสียเข้ามา มีส่วนร่วมในการดำเนินงาน",
+    "href": "ita/696.pdf",
+    "url": "https://www.oass.sskru.ac.th/ita/696.pdf",
+    "target": "_blank",
+    "images": [],
+    "type": "PDF",
+    "offset": 64660
+  },
+  {
+    "id": 161,
+    "label": "[รูปภาพ: pic/icon5.gif]",
+    "href": "https://www.facebook.com/OASSSSKRUNEWSUPDATE",
+    "url": "https://www.facebook.com/OASSSSKRUNEWSUPDATE",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/icon5.gif",
+        "alt": ""
+      }
+    ],
+    "type": "external",
+    "offset": 64881
+  },
+  {
+    "id": 162,
+    "label": "รับสมัครนักศึกษา",
+    "href": "http://www.oass.sskru.ac.th/std.sskru/s1.html",
+    "url": "http://www.oass.sskru.ac.th/std.sskru/s1.html",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/icon1.gif",
+        "alt": "รับสมัครนักศึกษา"
+      }
+    ],
+    "type": "external",
+    "offset": 65133
+  },
+  {
+    "id": 163,
+    "label": "ฝ่ายส่งเสริมวิชาการ",
+    "href": "https://www.facebook.com/%E0%B8%81%E0%B8%A5%E0%B8%B8%E0%B9%88%E0%B8%A1%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%AA%E0%B9%88%E0%B8%87%E0%B9%80%E0%B8%AA%E0%B8%A3%E0%B8%B4%E0%B8%A1%E0%B8%A7%E0%B8%B4%E0%B8%8A%E0%B8%B2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%97%E0%B8%B0%E0%B9%80%E0%B8%9A%E0%B8%B5%E0%B8%A2%E0%B8%99-%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%A5%E0%B8%B1%E0%B8%A2%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%A0%E0%B8%B1%E0%B8%8F%E0%B8%A8%E0%B8%A3%E0%B8%B5%E0%B8%AA%E0%B8%B0%E0%B9%80%E0%B8%81%E0%B8%A9-863743446991204/?ref=settings",
+    "url": "https://www.facebook.com/%E0%B8%81%E0%B8%A5%E0%B8%B8%E0%B9%88%E0%B8%A1%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%AA%E0%B9%88%E0%B8%87%E0%B9%80%E0%B8%AA%E0%B8%A3%E0%B8%B4%E0%B8%A1%E0%B8%A7%E0%B8%B4%E0%B8%8A%E0%B8%B2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%97%E0%B8%B0%E0%B9%80%E0%B8%9A%E0%B8%B5%E0%B8%A2%E0%B8%99-%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%A5%E0%B8%B1%E0%B8%A2%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%A0%E0%B8%B1%E0%B8%8F%E0%B8%A8%E0%B8%A3%E0%B8%B5%E0%B8%AA%E0%B8%B0%E0%B9%80%E0%B8%81%E0%B8%A9-863743446991204/?ref=settings",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/icon2.gif",
+        "alt": "ฝ่ายส่งเสริมวิชาการ"
+      }
+    ],
+    "type": "external",
+    "offset": 65402
+  },
+  {
+    "id": 164,
+    "label": "[รูปภาพ: pic/icon16.gif]",
+    "href": "http://reg.sskru.ac.th/timetbl/",
+    "url": "http://reg.sskru.ac.th/timetbl/",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/icon16.gif",
+        "alt": ""
+      }
+    ],
+    "type": "external",
+    "offset": 66234
+  },
+  {
+    "id": 165,
+    "label": "[รูปภาพ: pic/icon21.jpg]",
+    "href": "https://www.facebook.com/profile.php?id=100067890830799",
+    "url": "https://www.facebook.com/profile.php?id=100067890830799",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/icon21.jpg",
+        "alt": ""
+      }
+    ],
+    "type": "external",
+    "offset": 66452
+  },
+  {
+    "id": 166,
+    "label": "[รูปภาพ: pic/icon17.gif]",
+    "href": "https://www.facebook.com/groups/350446318382368",
+    "url": "https://www.facebook.com/groups/350446318382368",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/icon17.gif",
+        "alt": ""
+      }
+    ],
+    "type": "external",
+    "offset": 66697
+  },
+  {
+    "id": 167,
+    "label": "[รูปภาพ: pic/icon28.jpg]",
+    "href": "https://www.facebook.com/@U2T-SSKRU-100076744291510/?paipv=0&eav=AfaaR8qMpLKFd6RFeWltF1IM5qh2LVZXXavKzhnPmGAJbESwz2Vgosq69Y7h8ObfUSQ&_rdr",
+    "url": "https://www.facebook.com/@U2T-SSKRU-100076744291510/?paipv=0&eav=AfaaR8qMpLKFd6RFeWltF1IM5qh2LVZXXavKzhnPmGAJbESwz2Vgosq69Y7h8ObfUSQ&_rdr",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/icon28.jpg",
+        "alt": ""
+      }
+    ],
+    "type": "external",
+    "offset": 66930
+  },
+  {
+    "id": 168,
+    "label": "[รูปภาพ: pic/box.gif]",
+    "href": "https://www.facebook.com/groups/350446318382368",
+    "url": "https://www.facebook.com/groups/350446318382368",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/box.gif",
+        "alt": ""
+      }
+    ],
+    "type": "external",
+    "offset": 67257
+  },
+  {
+    "id": 169,
+    "label": "U2T SSKRU",
+    "href": "https://www.facebook.com/@U2T-SSKRU-100076744291510/?paipv=0&eav=AfaaR8qMpLKFd6RFeWltF1IM5qh2LVZXXavKzhnPmGAJbESwz2Vgosq69Y7h8ObfUSQ&_rdr",
+    "url": "https://www.facebook.com/@U2T-SSKRU-100076744291510/?paipv=0&eav=AfaaR8qMpLKFd6RFeWltF1IM5qh2LVZXXavKzhnPmGAJbESwz2Vgosq69Y7h8ObfUSQ&_rdr",
+    "target": "_blank",
+    "images": [],
+    "type": "external",
+    "offset": 67396
+  },
+  {
+    "id": 170,
+    "label": "[รูปภาพ: pic/box.gif]",
+    "href": "https://www.facebook.com/groups/350446318382368",
+    "url": "https://www.facebook.com/groups/350446318382368",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/box.gif",
+        "alt": ""
+      }
+    ],
+    "type": "external",
+    "offset": 67674
+  },
+  {
+    "id": 171,
+    "label": "U2T Online Community",
+    "href": "https://www.facebook.com/profile.php?id=100067036770418",
+    "url": "https://www.facebook.com/profile.php?id=100067036770418",
+    "target": "_blank",
+    "images": [],
+    "type": "external",
+    "offset": 67806
+  },
+  {
+    "id": 172,
+    "label": "[รูปภาพ: pic/icon25.jpg]",
+    "href": "https://hub.sskru.ac.th/survey/admin/survey/dashboard?fiscal_year=2026",
+    "url": "https://hub.sskru.ac.th/survey/admin/survey/dashboard?fiscal_year=2026",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/icon25.jpg",
+        "alt": ""
+      }
+    ],
+    "type": "external",
+    "offset": 67999
+  },
+  {
+    "id": 173,
+    "label": "รายงานการใช้ห้อง (ตึก7)",
+    "href": "https://docs.google.com/spreadsheets/d/1rsap5JHIGIR1BozaltW2v1oj4M2lPMGK3rcfrf6KzXs/edit#gid=1866721789",
+    "url": "https://docs.google.com/spreadsheets/d/1rsap5JHIGIR1BozaltW2v1oj4M2lPMGK3rcfrf6KzXs/edit#gid=1866721789",
+    "target": "_blank",
+    "images": [],
+    "type": "external",
+    "offset": 68311
+  },
+  {
+    "id": 174,
+    "label": "รายงานการตรวจสอบวุฒิ",
+    "href": "https://docs.google.com/spreadsheets/d/1yvwGLqwuGQzKk2aH7FTDgMg5II1UlGyE/edit#gid=1318077569",
+    "url": "https://docs.google.com/spreadsheets/d/1yvwGLqwuGQzKk2aH7FTDgMg5II1UlGyE/edit#gid=1318077569",
+    "target": "_blank",
+    "images": [],
+    "type": "external",
+    "offset": 68629
+  },
+  {
+    "id": 175,
+    "label": "รายงานการสำเร็จการศึกษา",
+    "href": "https://docs.google.com/spreadsheets/d/14hqTjarZO3gd3YbiMPw9__r1MzR8a95h/edit#gid=2085406211",
+    "url": "https://docs.google.com/spreadsheets/d/14hqTjarZO3gd3YbiMPw9__r1MzR8a95h/edit#gid=2085406211",
+    "target": "_blank",
+    "images": [],
+    "type": "external",
+    "offset": 68939
+  },
+  {
+    "id": 176,
+    "label": "[รูปภาพ: pic/icon26.jpg]",
+    "href": "https://www.sskru.ac.th/e-service/",
+    "url": "https://www.sskru.ac.th/e-service/",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/icon26.jpg",
+        "alt": ""
+      }
+    ],
+    "type": "external",
+    "offset": 69174
+  },
+  {
+    "id": 177,
+    "label": "สถิติการให้บริการ",
+    "href": "dEsv.html",
+    "url": "https://www.oass.sskru.ac.th/dEsv.html",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/box.gif",
+        "alt": ""
+      }
+    ],
+    "type": "internal",
+    "offset": 69394
+  },
+  {
+    "id": 178,
+    "label": "ตรวจสอบผลการเรียน",
+    "href": "https://app.sskru.ac.th/student/auth/login",
+    "url": "https://app.sskru.ac.th/student/auth/login",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/box.gif",
+        "alt": ""
+      }
+    ],
+    "type": "external",
+    "offset": 69602
+  },
+  {
+    "id": 179,
+    "label": "ใบรายชื่อนักศึกษา",
+    "href": "http://202.29.57.13/informservice/prn_group1.php",
+    "url": "http://202.29.57.13/informservice/prn_group1.php",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/box.gif",
+        "alt": ""
+      }
+    ],
+    "type": "external",
+    "offset": 69843
+  },
+  {
+    "id": 180,
+    "label": "ระบบตารางเรียน",
+    "href": "https://reg.sskru.ac.th/timetbl/",
+    "url": "https://reg.sskru.ac.th/timetbl/",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/box.gif",
+        "alt": ""
+      }
+    ],
+    "type": "external",
+    "offset": 70090
+  },
+  {
+    "id": 181,
+    "label": "ระบบตารางสอน",
+    "href": "https://reg.sskru.ac.th/timetbl/",
+    "url": "https://reg.sskru.ac.th/timetbl/",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/box.gif",
+        "alt": ""
+      }
+    ],
+    "type": "external",
+    "offset": 70318
+  },
+  {
+    "id": 182,
+    "label": "ระบบตารางการใช้ห้อง",
+    "href": "https://reg.sskru.ac.th/timetbl/",
+    "url": "https://reg.sskru.ac.th/timetbl/",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/box.gif",
+        "alt": ""
+      }
+    ],
+    "type": "external",
+    "offset": 70544
+  },
+  {
+    "id": 183,
+    "label": "ระบบรับสมัครเรียน",
+    "href": "https://app.sskru.ac.th/admission/register",
+    "url": "https://app.sskru.ac.th/admission/register",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/box.gif",
+        "alt": ""
+      }
+    ],
+    "type": "external",
+    "offset": 70777
+  },
+  {
+    "id": 184,
+    "label": "พิมพ์บัตรลงทะเบียน",
+    "href": "https://app.sskru.ac.th/student/",
+    "url": "https://app.sskru.ac.th/student/",
+    "target": "_blank",
+    "images": [],
+    "type": "external",
+    "offset": 71089
+  },
+  {
+    "id": 185,
+    "label": "ปฏิทินการศึกษา Google",
+    "href": "http://reg.sskru.ac.th/student/login.php",
+    "url": "http://reg.sskru.ac.th/student/login.php",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/box.gif",
+        "alt": ""
+      }
+    ],
+    "type": "external",
+    "offset": 71268
+  },
+  {
+    "id": 186,
+    "label": "SSKRU Ranking",
+    "href": "SSKRU_ranking.html",
+    "url": "https://www.oass.sskru.ac.th/SSKRU_ranking.html",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/box.gif",
+        "alt": ""
+      }
+    ],
+    "type": "internal",
+    "offset": 71511
+  },
+  {
+    "id": 187,
+    "label": "SCD SSKRU",
+    "href": "scd.html",
+    "url": "https://www.oass.sskru.ac.th/scd.html",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/box.gif",
+        "alt": ""
+      }
+    ],
+    "type": "internal",
+    "offset": 71724
+  },
+  {
+    "id": 188,
+    "label": "U-Multirank SSKRU",
+    "href": "uMultirankSSKRU.html",
+    "url": "https://www.oass.sskru.ac.th/uMultirankSSKRU.html",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/box.gif",
+        "alt": ""
+      }
+    ],
+    "type": "internal",
+    "offset": 71923
+  },
+  {
+    "id": 189,
+    "label": "UI GreenMetric",
+    "href": "SSKRU_UiGreen_2026.html",
+    "url": "https://www.oass.sskru.ac.th/SSKRU_UiGreen_2026.html",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/box.gif",
+        "alt": ""
+      }
+    ],
+    "type": "internal",
+    "offset": 72142
+  },
+  {
+    "id": 190,
+    "label": "SDGs SSKRU",
+    "href": "https://complaint-ssk.web.app/",
+    "url": "https://complaint-ssk.web.app/",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/box.gif",
+        "alt": ""
+      }
+    ],
+    "type": "external",
+    "offset": 72361
+  },
+  {
+    "id": 191,
+    "label": "Credits Bank of SSKRU",
+    "href": "http://www.oass.sskru.ac.th/Credits_Bank_of_SSKRU/home.html",
+    "url": "http://www.oass.sskru.ac.th/Credits_Bank_of_SSKRU/home.html",
+    "target": "_blank",
+    "images": [
+      {
+        "src": "pic/box.gif",
+        "alt": ""
+      }
+    ],
+    "type": "external",
+    "offset": 72583
+  }
+]
