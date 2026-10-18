@@ -142,6 +142,12 @@
 .floating-apply{background:linear-gradient(135deg,#e4b04a,#c69022);color:#152643}
 .floating-tooltip{position:absolute;right:62px;white-space:nowrap;background:var(--navy);color:#fff;font-size:12px;font-weight:600;padding:6px 12px;border-radius:8px;pointer-events:none;opacity:0;transform:translateX(8px);transition:opacity .2s,transform .2s;box-shadow:0 4px 12px #0003}
 .floating-cta-btn:hover .floating-tooltip{opacity:1;transform:translateX(0)}
+.floating-top{background:var(--navy);color:var(--gold);border:1.5px solid var(--gold);opacity:0;transform:scale(0.6);pointer-events:none;transition:opacity .25s,transform .25s,background .2s,color .2s;cursor:pointer}
+.floating-top.is-visible{opacity:1;transform:scale(1);pointer-events:auto}
+.floating-top:hover{background:var(--gold);color:var(--navy);border-color:var(--gold)}
+.floating-top svg{width:24px;height:24px;stroke-width:2.4}
+[data-theme=dark] .floating-top{background:#162b4c;border-color:var(--gold);color:var(--gold)}
+[data-theme=dark] .floating-top:hover{background:var(--gold);color:#0a172a}
 
 @media(max-width:900px){
   .quick-cta-grid{grid-template-columns:1fr;gap:12px}

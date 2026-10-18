@@ -115,12 +115,19 @@
       art.style.transform = `translate3d(0,${Math.min(offset * .14, 100)}px,0)`;
       word.style.transform = `translate3d(0,${Math.min(offset * .23, 150)}px,0)`;
     }
+    const backToTop = document.querySelector('#backToTop');
+    if (backToTop) {
+      if (scrollY > 300) backToTop.classList.add('is-visible');
+      else backToTop.classList.remove('is-visible');
+    }
   }
   function scheduleScroll() { if (!scheduled) { scheduled = true; requestAnimationFrame(paintScroll); } }
   addEventListener('scroll', scheduleScroll, {passive:true});
   addEventListener('resize', scheduleScroll, {passive:true});
   reducedMotion.addEventListener('change', scheduleScroll);
   paintScroll();
+  const backToTopBtn = document.querySelector('#backToTop');
+  if (backToTopBtn) backToTopBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
   /* ── PR News Tabs ── */
   const prTabs = document.querySelectorAll('.pr-tab');
