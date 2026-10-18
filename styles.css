@@ -104,3 +104,56 @@
 @media(max-width:900px){[data-theme=dark] .mega-menu{background:var(--soft);box-shadow:none}}
 @media(max-width:600px){.header-actions{gap:5px}.theme-toggle{width:32px;min-width:32px;min-height:34px;padding:6px}.theme-toggle svg{width:17px;height:17px}}
 @media(max-width:420px){.identity .brand-copy{max-width:clamp(80px,calc(100vw - 280px),140px)}.identity .brand-copy strong{font-size:9px}.identity .brand-copy>span{font-size:9px}}
+
+/* ── Call To Action (CTA) Buttons & Floating Dock ── */
+.line-btn{background:#06c755;color:#fff!important;border-color:transparent;box-shadow:0 4px 14px #06c75533}
+.line-btn:hover{background:#05b34c;color:#fff!important;box-shadow:0 6px 20px #06c75555}
+.phone-btn{background:#164aa8;color:#fff!important;border-color:transparent;box-shadow:0 4px 14px #164aa833}
+.phone-btn:hover{background:#113883;color:#fff!important;box-shadow:0 6px 20px #164aa855}
+.line-compact{background:#06c755;color:#fff!important;padding:8px 14px;border-radius:8px;font-size:13px;font-weight:600;display:inline-flex;align-items:center;gap:6px}
+.line-compact:hover{background:#05b34c}
+.line-compact svg{width:16px;height:16px}
+.hero-actions{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.hero-actions .button{gap:10px}
+.hero-actions .button svg{width:19px;height:19px}
+
+.quick-cta-bar{margin-top:-38px;position:relative;z-index:20;margin-bottom:28px}
+.quick-cta-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.quick-cta-item{display:flex;align-items:center;gap:16px;background:var(--white);padding:18px 22px;border-radius:14px;border:1px solid var(--line);box-shadow:0 8px 24px #061b3e12;transition:transform .2s,box-shadow .2s,border-color .2s}
+.quick-cta-item:hover{transform:translateY(-3px);box-shadow:0 14px 32px #061b3e20;border-color:var(--gold)}
+.cta-icon-badge{width:46px;height:46px;border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.cta-icon-badge.fb{background:#1877f215;color:#1877f2}
+.cta-icon-badge.line{background:#06c75518;color:#06c755}
+.cta-icon-badge.phone{background:#164aa815;color:#164aa8}
+.cta-icon-badge svg{width:24px;height:24px}
+.cta-text{display:flex;flex-direction:column;gap:3px;min-width:0;flex:1}
+.cta-text strong{font-size:15px;font-weight:650;color:var(--ink);line-height:1.4}
+.cta-text span{font-size:12px;color:var(--muted);line-height:1.4}
+.cta-arrow{font-size:18px;color:var(--gold-ink);transition:transform .2s;flex-shrink:0}
+.quick-cta-item:hover .cta-arrow{transform:translateX(4px)}
+
+/* Floating CTA Dock */
+.floating-cta-dock{position:fixed;right:22px;bottom:24px;z-index:90;display:flex;flex-direction:column;gap:12px}
+.floating-cta-btn{position:relative;width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;box-shadow:0 6px 20px #061b3e33;transition:transform .2s,box-shadow .2s}
+.floating-cta-btn:hover{transform:scale(1.08);box-shadow:0 10px 28px #061b3e44}
+.floating-cta-btn svg{width:26px;height:26px}
+.floating-line{background:#06c755}
+.floating-phone{background:#164aa8}
+.floating-apply{background:linear-gradient(135deg,#e4b04a,#c69022);color:#152643}
+.floating-tooltip{position:absolute;right:62px;white-space:nowrap;background:var(--navy);color:#fff;font-size:12px;font-weight:600;padding:6px 12px;border-radius:8px;pointer-events:none;opacity:0;transform:translateX(8px);transition:opacity .2s,transform .2s;box-shadow:0 4px 12px #0003}
+.floating-cta-btn:hover .floating-tooltip{opacity:1;transform:translateX(0)}
+
+@media(max-width:900px){
+  .quick-cta-grid{grid-template-columns:1fr;gap:12px}
+  .quick-cta-bar{margin-top:-20px}
+  .floating-cta-dock{right:16px;bottom:16px;gap:10px}
+  .floating-cta-btn{width:46px;height:46px}
+  .floating-cta-btn svg{width:22px;height:22px}
+  .floating-tooltip{display:none}
+}
+@media(max-width:600px){
+  .hero-actions{gap:8px}
+  .hero-actions .button{min-height:42px;padding:9px 13px;font-size:12px}
+  .line-compact span{display:none}
+}
+

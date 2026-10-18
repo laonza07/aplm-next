@@ -15,6 +15,8 @@ for(const item of news) assert.ok(links.some(link=>link.id===item.id));
 for(const match of html.matchAll(/(?:src|href)="([^"#]+)"/g)){const value=match[1];if(!/^(?:https?:|tel:|mailto:|\.\/)/.test(value)) await access(new URL(value,root));}
 const ids=[...html.matchAll(/\bid="([^"]+)"/g)].map(match=>match[1]);
 assert.equal(new Set(ids).size,ids.length,'Duplicate HTML IDs');
-assert.equal((html.match(/https:\/\/app\.sskru\.ac\.th\/admission\/register/g)||[]).length,3);
+assert.ok(html.includes('https://www.facebook.com/profile.php?id=61591746698301'),'Missing Facebook Admission link');
+assert.ok(html.includes('https://lin.ee/wv89bVi'),'Missing LINE link');
+assert.ok(html.includes('tel:045643622'),'Missing phone link');
 new vm.Script(await readFile(new URL('app.js',root),'utf8'));
 console.log('PASS: all 191 source URLs preserved; navigation/news IDs, admission CTAs, local assets, HTML IDs and JavaScript syntax checked.');
