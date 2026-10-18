@@ -113,7 +113,7 @@
     if (box.bottom > 0 && box.top < innerHeight) {
       const offset = Math.max(0, -box.top);
       art.style.transform = `translate3d(0,${Math.min(offset * .14, 100)}px,0)`;
-      word.style.transform = `translate3d(0,${Math.min(offset * .23, 150)}px,0)`;
+      word.style.transform = `translate3d(0,${Math.min(offset * .08, 40)}px,0)`;
     }
     const backToTop = document.querySelector('#backToTop');
     if (backToTop) {
