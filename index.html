@@ -372,7 +372,7 @@
       </div>
     </section>
   </main>
-  <footer class="footer"><div class="wrap footer-main"><a class="brand footer-brand" href="#top"><span class="brand-logos"><img class="crest" src="assets/university-logo.png" alt="ตรามหาวิทยาลัยราชภัฏศรีสะเกษ" width="60" height="60" loading="lazy"><span class="logo-divider"></span><img class="bureau" src="assets/bureau-logo.png" alt="ตราสำนัก APLM" width="58" height="58" loading="lazy"></span><span class="brand-copy"><strong>สำนักส่งเสริมวิชาการและจัดการเรียนรู้ตลอดชีวิต</strong><span>มหาวิทยาลัยราชภัฏศรีสะเกษ</span></span></a><div class="footer-contact"><a href="tel:045643622">โทร. 045-643-622</a><a href="https://lin.ee/wv89bVi" target="_blank" rel="noopener noreferrer">LINE Official: @922dxbcy ↗</a><a href="https://www.facebook.com/profile.php?id=61591746698301" target="_blank" rel="noopener noreferrer">เพจรับสมัครนักศึกษา ↗</a><a data-oass="73">ติดต่อ / แจ้งเรื่องร้องเรียน ↗</a></div></div><div class="wrap footer-bottom"><span>APLM · SISAKET RAJABHAT UNIVERSITY</span><a href="https://www.oass.sskru.ac.th/OASS.html" target="_blank" rel="noopener noreferrer">เว็บไซต์ OASS เดิม ↗</a><a href="#top">กลับด้านบน ↑</a></div></footer>
+  <footer class="footer"><div class="wrap footer-main"><a class="brand footer-brand" href="#top"><span class="brand-logos"><img class="crest" src="assets/university-logo.png" alt="ตรามหาวิทยาลัยราชภัฏศรีสะเกษ" width="60" height="60" loading="lazy"><span class="logo-divider"></span><img class="bureau" src="assets/bureau-logo.png" alt="ตราสำนัก APLM" width="58" height="58" loading="lazy"></span><span class="brand-copy"><strong>สำนักส่งเสริมวิชาการและจัดการเรียนรู้ตลอดชีวิต</strong><span>มหาวิทยาลัยราชภัฏศรีสะเกษ</span></span></a><div class="footer-contact"><a href="tel:045643622">โทร. 045-643-622</a><a href="https://lin.ee/wv89bVi" target="_blank" rel="noopener noreferrer">LINE Official: @922dxbcy ↗</a><a href="https://www.facebook.com/profile.php?id=61591746698301" target="_blank" rel="noopener noreferrer">เพจรับสมัครนักศึกษา ↗</a><a data-oass="73">ติดต่อ / แจ้งเรื่องร้องเรียน ↗</a></div></div><div class="wrap footer-bottom"><span>APLM · SISAKET RAJABHAT UNIVERSITY</span><button type="button" class="cookie-policy-btn" id="reopenCookieBanner">ตั้งค่าคุกกี้ / PDPA</button><a href="https://www.oass.sskru.ac.th/OASS.html" target="_blank" rel="noopener noreferrer">เว็บไซต์ OASS เดิม ↗</a><a href="#top">กลับด้านบน ↑</a></div></footer>
   <!-- ปุ่มกลับขึ้นด้านบน (แยกเดี่ยวอิสระ) -->
   <button class="back-to-top-btn" id="backToTop" type="button" aria-label="กลับขึ้นด้านบน">
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m18 15-6-6-6 6"/></svg>
@@ -399,6 +399,26 @@
       <svg class="toggle-icon-closed" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
       <span class="floating-tooltip" id="floatingToggleTooltip">พับเก็บเมนู</span>
     </button>
+  </aside>
+
+  <!-- ── แถบแจ้งเตือนคุกกี้และข้อมูลส่วนบุคคล (PDPA Cookie Consent Banner) ── -->
+  <aside class="cookie-banner" id="cookieBanner" role="region" aria-label="การแจ้งเตือนการใช้งานคุกกี้และข้อมูลส่วนบุคคล" hidden>
+    <div class="cookie-card">
+      <div class="cookie-header">
+        <div class="cookie-icon-badge" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"/><circle cx="8.5" cy="8.5" r="1"/><circle cx="7.5" cy="13.5" r="1"/><circle cx="12" cy="16.5" r="1"/><circle cx="16.5" cy="13.5" r="1"/><circle cx="12" cy="11" r="1"/></svg>
+        </div>
+        <div class="cookie-heading">
+          <strong>การใช้งานคุกกี้และข้อมูลส่วนบุคคล (PDPA)</strong>
+          <p>สำนักส่งเสริมวิชาการและจัดการเรียนรู้ตลอดชีวิต ใช้คุกกี้เพื่อพัฒนาประสิทธิภาพและมอบประสบการณ์การใช้งานที่ดีแก่ท่านตาม พ.ร.บ. คุ้มครองข้อมูลส่วนบุคคล พ.ศ. 2562</p>
+        </div>
+      </div>
+      <div class="cookie-actions">
+        <button type="button" class="cookie-btn cookie-btn-accept" id="cookieAcceptAll">ยอมรับทั้งหมด</button>
+        <button type="button" class="cookie-btn cookie-btn-necessary" id="cookieNecessaryOnly">เฉพาะที่จำเป็น</button>
+        <a class="cookie-policy-link" href="#directory" data-select="quality">นโยบายข้อมูลสำนัก ↗</a>
+      </div>
+    </div>
   </aside>
 </body>
 </html>
