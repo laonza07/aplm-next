@@ -327,4 +327,17 @@
       });
     }
   }
+
+  /* ── Interactive Brand Logo Spin on Click/Tap ── */
+  const brandLogos = document.querySelectorAll('.brand-logos');
+  brandLogos.forEach(logoWrap => {
+    logoWrap.addEventListener('click', () => {
+      const bureau = logoWrap.querySelector('.bureau');
+      if (bureau) {
+        bureau.classList.remove('is-spinning');
+        void bureau.offsetWidth;
+        bureau.classList.add('is-spinning');
+      }
+    });
+  });
 })();

@@ -153,12 +153,22 @@
 .floating-apply{background:linear-gradient(135deg,#e4b04a,#c69022);color:#152643}
 .floating-tooltip{position:absolute;right:62px;white-space:nowrap;background:var(--navy);color:#fff;font-size:12px;font-weight:650;padding:6px 12px;border-radius:8px;pointer-events:none;opacity:0;transform:translateX(8px);transition:opacity .2s,transform .2s;box-shadow:0 4px 12px #0003}
 .floating-cta-btn:hover .floating-tooltip{opacity:1;transform:translateX(0)}
-.floating-top{background:var(--navy);color:var(--gold);border:1.5px solid var(--gold);opacity:0;transform:scale(0.6);pointer-events:none;transition:opacity .25s,transform .25s,background .2s,color .2s;cursor:pointer}
-.floating-top.is-visible{opacity:1;transform:scale(1);pointer-events:auto}
-.floating-top:hover{background:var(--gold);color:var(--navy);border-color:var(--gold)}
-.floating-top svg{width:24px;height:24px;stroke-width:2.4}
-[data-theme=dark] .floating-top{background:#162b4c;border-color:var(--gold);color:var(--gold)}
+/* Separate Back to Top Button */
+.back-to-top-btn,
+.floating-top{position:fixed;right:88px;bottom:24px;z-index:89;width:52px;height:52px;border-radius:50%;background:var(--navy);color:var(--gold);border:1.5px solid var(--gold);box-shadow:0 6px 20px #061b3e40;display:flex;align-items:center;justify-content:center;cursor:pointer;opacity:0;pointer-events:none;transform:translateY(12px) scale(0.9);transition:opacity .25s ease,transform .25s ease,background .2s,color .2s,border-color .2s,box-shadow .2s}
+.back-to-top-btn.is-visible,
+.floating-top.is-visible{opacity:1;pointer-events:auto;transform:translateY(0) scale(1)}
+.back-to-top-btn:hover,
+.floating-top:hover{background:var(--gold);color:var(--navy);border-color:var(--gold);transform:translateY(-2px) scale(1.06);box-shadow:0 10px 24px rgba(228,176,74,0.4)}
+.back-to-top-btn svg,
+.floating-top svg{width:24px;height:24px;stroke-width:2.4;fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round}
+.back-to-top-tooltip{position:absolute;bottom:calc(100% + 9px);left:50%;transform:translateX(-50%) translateY(4px);white-space:nowrap;background:var(--navy);color:#fff;font-size:12px;font-weight:650;padding:5px 11px;border-radius:8px;pointer-events:none;opacity:0;transition:opacity .2s,transform .2s;box-shadow:0 4px 14px #0004;border:1px solid rgba(228,176,74,0.3)}
+.back-to-top-btn:hover .back-to-top-tooltip{opacity:1;transform:translateX(-50%) translateY(0)}
+[data-theme=dark] .back-to-top-btn,
+[data-theme=dark] .floating-top{background:#162b4c;border-color:var(--gold);color:var(--gold);box-shadow:0 6px 20px rgba(0,0,0,0.5)}
+[data-theme=dark] .back-to-top-btn:hover,
 [data-theme=dark] .floating-top:hover{background:var(--gold);color:#0a172a}
+[data-theme=dark] .back-to-top-tooltip{background:#0d1e38}
 
 /* ── Activity Carousel ── */
 .activities-section{padding-block:68px;background:var(--soft);border-top:1px solid var(--line)}
@@ -239,6 +249,9 @@
   .floating-toggle-btn{width:48px;height:48px}
   .floating-toggle-btn svg{width:22px;height:22px}
   .floating-tooltip{display:none}
+  .back-to-top-btn,.floating-top{right:74px;bottom:16px;width:46px;height:46px}
+  .back-to-top-btn svg,.floating-top svg{width:22px;height:22px}
+  .back-to-top-tooltip{display:none}
   .carousel-slide{flex:0 0 100%}
   .faculties-grid{grid-template-columns:repeat(2,1fr)}
   .map-layout{grid-template-columns:1fr;gap:20px}
@@ -272,5 +285,113 @@
   .hero-control-btn .control-label{display:none}
   .hero-control-btn{padding:8px;border-radius:50%}
 }
+
+/* ── Brand Logo Animations: Shimmer Light Sweep & Spin ── */
+.brand-logos {
+  position: relative;
+  overflow: hidden;
+  border-radius: 14px;
+  padding: 4px 6px;
+}
+.brand-logos::after {
+  content: '';
+  position: absolute;
+  top: -60%;
+  left: -140%;
+  width: 70%;
+  height: 220%;
+  background: linear-gradient(
+    105deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.05) 15%,
+    rgba(228, 176, 74, 0.35) 38%,
+    rgba(255, 255, 255, 0.95) 50%,
+    rgba(228, 176, 74, 0.35) 62%,
+    rgba(255, 255, 255, 0.05) 85%,
+    transparent 100%
+  );
+  transform: rotate(22deg);
+  pointer-events: none;
+  animation: logo-shimmer 4.8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  z-index: 2;
+  mix-blend-mode: screen;
+}
+.brand:hover .brand-logos::after {
+  animation: logo-shimmer-fast 0.85s ease-out;
+}
+@keyframes logo-shimmer {
+  0%, 60% {
+    left: -140%;
+    opacity: 0;
+  }
+  64% {
+    opacity: 1;
+  }
+  92% {
+    left: 150%;
+    opacity: 1;
+  }
+  100% {
+    left: 150%;
+    opacity: 0;
+  }
+}
+@keyframes logo-shimmer-fast {
+  0% {
+    left: -140%;
+    opacity: 1;
+  }
+  100% {
+    left: 150%;
+    opacity: 1;
+  }
+}
+
+/* Logo Rotation & Hover Micro-interactions */
+.bureau {
+  transition: transform 0.8s cubic-bezier(0.34, 1.4, 0.64, 1), filter 0.3s ease;
+  transform-origin: center center;
+  will-change: transform;
+}
+.brand:hover .bureau {
+  transform: rotate(360deg) scale(1.06);
+  filter: drop-shadow(0 4px 14px rgba(228, 176, 74, 0.5));
+}
+.bureau.is-spinning {
+  animation: bureau-spin 0.85s cubic-bezier(0.34, 1.4, 0.64, 1);
+}
+@keyframes bureau-spin {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+.crest {
+  transition: transform 0.5s ease, filter 0.3s ease;
+  transform-origin: center center;
+  will-change: transform;
+}
+.brand:hover .crest {
+  transform: translateY(-2px) scale(1.04);
+  filter: drop-shadow(0 4px 12px rgba(6, 27, 62, 0.22));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .brand-logos::after {
+    animation: none !important;
+    display: none !important;
+  }
+  .bureau, .crest {
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
 
 
