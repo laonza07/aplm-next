@@ -372,7 +372,7 @@
       </div>
     </section>
   </main>
-  <footer class="footer"><div class="wrap footer-main"><a class="brand footer-brand" href="#top"><span class="brand-logos"><img class="crest" src="assets/university-logo.png" alt="ตรามหาวิทยาลัยราชภัฏศรีสะเกษ" width="60" height="60" loading="lazy"><span class="logo-divider"></span><img class="bureau" src="assets/bureau-logo.png" alt="ตราสำนัก APLM" width="58" height="58" loading="lazy"></span><span class="brand-copy"><strong>สำนักส่งเสริมวิชาการและจัดการเรียนรู้ตลอดชีวิต</strong><span>มหาวิทยาลัยราชภัฏศรีสะเกษ</span></span></a><div class="footer-contact"><a href="tel:045643622">โทร. 045-643-622</a><a href="https://lin.ee/wv89bVi" target="_blank" rel="noopener noreferrer">LINE Official: @922dxbcy ↗</a><a href="https://www.facebook.com/profile.php?id=61591746698301" target="_blank" rel="noopener noreferrer">เพจรับสมัครนักศึกษา ↗</a><a data-oass="73">ติดต่อ / แจ้งเรื่องร้องเรียน ↗</a></div></div><div class="wrap footer-bottom"><span>APLM · SISAKET RAJABHAT UNIVERSITY</span><button type="button" class="cookie-policy-btn" id="reopenCookieBanner">ตั้งค่าคุกกี้ / PDPA</button><a href="https://www.oass.sskru.ac.th/OASS.html" target="_blank" rel="noopener noreferrer">เว็บไซต์ OASS เดิม ↗</a><a href="#top">กลับด้านบน ↑</a></div></footer>
+  <footer class="footer"><div class="wrap footer-main"><a class="brand footer-brand" href="#top"><span class="brand-logos"><img class="crest" src="assets/university-logo.png" alt="ตรามหาวิทยาลัยราชภัฏศรีสะเกษ" width="60" height="60" loading="lazy"><span class="logo-divider"></span><img class="bureau" src="assets/bureau-logo.png" alt="ตราสำนัก APLM" width="58" height="58" loading="lazy"></span><span class="brand-copy"><strong>สำนักส่งเสริมวิชาการและจัดการเรียนรู้ตลอดชีวิต</strong><span>มหาวิทยาลัยราชภัฏศรีสะเกษ</span></span></a><div class="footer-contact"><a href="tel:045643622">โทร. 045-643-622</a><a href="https://lin.ee/wv89bVi" target="_blank" rel="noopener noreferrer">LINE Official: @922dxbcy ↗</a><a href="https://www.facebook.com/profile.php?id=61591746698301" target="_blank" rel="noopener noreferrer">เพจรับสมัครนักศึกษา ↗</a><a data-oass="73">ติดต่อ / แจ้งเรื่องร้องเรียน ↗</a></div></div><div class="wrap footer-bottom"><span>APLM · SISAKET RAJABHAT UNIVERSITY</span><button type="button" class="cookie-policy-btn" id="openPdpaPolicyModal">นโยบายความเป็นส่วนตัวและการเปิดเผยข้อมูล (PDPA)</button><button type="button" class="cookie-policy-btn" id="reopenCookieBanner">ตั้งค่าความยินยอมข้อมูล / คุกกี้</button><a href="https://www.oass.sskru.ac.th/OASS.html" target="_blank" rel="noopener noreferrer">เว็บไซต์ OASS เดิม ↗</a><a href="#top">กลับด้านบน ↑</a></div></footer>
   <!-- ปุ่มกลับขึ้นด้านบน (แยกเดี่ยวอิสระ) -->
   <button class="back-to-top-btn" id="backToTop" type="button" aria-label="กลับขึ้นด้านบน">
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m18 15-6-6-6 6"/></svg>
@@ -401,25 +401,205 @@
     </button>
   </aside>
 
-  <!-- ── แถบแจ้งเตือนคุกกี้และข้อมูลส่วนบุคคล (PDPA Cookie Consent Banner) ── -->
+  <!-- ── แถบแจ้งเตือนการยินยอมและเปิดเผยข้อมูลส่วนบุคคล (PDPA Consent & Disclosure Banner) ── -->
   <aside class="cookie-banner" id="cookieBanner" role="region" aria-label="การแจ้งเตือนการใช้งานคุกกี้และข้อมูลส่วนบุคคล" hidden>
     <div class="cookie-card">
       <div class="cookie-header">
         <div class="cookie-icon-badge" aria-hidden="true">
-          <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"/><circle cx="8.5" cy="8.5" r="1"/><circle cx="7.5" cy="13.5" r="1"/><circle cx="12" cy="16.5" r="1"/><circle cx="16.5" cy="13.5" r="1"/><circle cx="12" cy="11" r="1"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
         </div>
         <div class="cookie-heading">
-          <strong>การใช้งานคุกกี้และข้อมูลส่วนบุคคล (PDPA)</strong>
-          <p>สำนักส่งเสริมวิชาการและจัดการเรียนรู้ตลอดชีวิต ใช้คุกกี้เพื่อพัฒนาประสิทธิภาพและมอบประสบการณ์การใช้งานที่ดีแก่ท่านตาม พ.ร.บ. คุ้มครองข้อมูลส่วนบุคคล พ.ศ. 2562</p>
+          <strong>การยินยอมให้ข้อมูลและการเปิดเผยข้อมูลส่วนบุคคล (PDPA)</strong>
+          <p>สำนักส่งเสริมวิชาการและจัดการเรียนรู้ตลอดชีวิต (APLM SSKRU) ขอความยินยอมในการจัดเก็บ ประมวลผล และเปิดเผยข้อมูลส่วนบุคคลของท่านเพื่อประโยชน์ทางการศึกษาและบริการของมหาวิทยาลัยตาม พ.ร.บ. คุ้มครองข้อมูลส่วนบุคคล พ.ศ. 2562</p>
         </div>
       </div>
       <div class="cookie-actions">
-        <button type="button" class="cookie-btn cookie-btn-accept" id="cookieAcceptAll">ยอมรับทั้งหมด</button>
+        <button type="button" class="cookie-btn cookie-btn-accept" id="cookieAcceptAll">ยินยอมทั้งหมด</button>
+        <button type="button" class="cookie-btn cookie-btn-customize" id="cookieCustomize">ตั้งค่าความยินยอม</button>
         <button type="button" class="cookie-btn cookie-btn-necessary" id="cookieNecessaryOnly">เฉพาะที่จำเป็น</button>
-        <a class="cookie-policy-link" href="#directory" data-select="quality">นโยบายข้อมูลสำนัก ↗</a>
+        <button type="button" class="cookie-policy-link-btn" id="bannerPolicyLink">อ่านประกาศและนโยบายฉบับเต็ม ↗</button>
       </div>
     </div>
   </aside>
+
+  <!-- ── หน้าต่างประกาศความเป็นส่วนตัวและการยินยอมเปิดเผยข้อมูลส่วนบุคคล (PDPA Privacy Notice & Disclosure Modal) ── -->
+  <div class="pdpa-modal-backdrop" id="pdpaModal" role="dialog" aria-modal="true" aria-labelledby="pdpaModalTitle" hidden>
+    <div class="pdpa-modal-card">
+      <div class="pdpa-modal-header">
+        <div class="pdpa-modal-brand">
+          <div class="pdpa-modal-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+          </div>
+          <div>
+            <h2 id="pdpaModalTitle" class="pdpa-modal-title">ประกาศความเป็นส่วนตัวและการยินยอมเปิดเผยข้อมูลส่วนบุคคล</h2>
+            <p class="pdpa-modal-subtitle">สำนักส่งเสริมวิชาการและจัดการเรียนรู้ตลอดชีวิต มหาวิทยาลัยราชภัฏศรีสะเกษ (APLM SSKRU)</p>
+          </div>
+        </div>
+        <button type="button" class="pdpa-modal-close" id="pdpaModalClose" aria-label="ปิดหน้าต่าง">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        </button>
+      </div>
+
+      <div class="pdpa-modal-body">
+        <!-- กล่องเกริ่นนำตามกฎหมาย -->
+        <div class="pdpa-intro-box">
+          <p>
+            ประกาศฉบับนี้จัดทำขึ้นตาม <strong>พระราชบัญญัติคุ้มครองข้อมูลส่วนบุคคล พ.ศ. 2562 (PDPA)</strong> เพื่อแจ้งให้ท่านทราบถึงนโยบาย วัตถุประสงค์ ขอบเขตการจัดเก็บ การประมวลผล ตลอดจน <strong>เงื่อนไขและแนวปฏิบัติในการเปิดเผยข้อมูลส่วนบุคคล</strong> ให้แก่บุคคลภายนอกหรือหน่วยงานที่เกี่ยวข้อง รวมถึงสิทธิของท่านในฐานะเจ้าของข้อมูลส่วนบุคคล
+          </p>
+        </div>
+
+        <div class="pdpa-sections">
+          <!-- 1. วัตถุประสงค์ -->
+          <section class="pdpa-section">
+            <h3 class="pdpa-sec-title">
+              <span class="pdpa-sec-num">1</span>
+              วัตถุประสงค์และฐานทางกฎหมายในการประมวลผลข้อมูล
+            </h3>
+            <p>สำนักส่งเสริมวิชาการและจัดการเรียนรู้ตลอดชีวิต ดำเนินการเก็บรวบรวม ใช้ และประมวลผลข้อมูลส่วนบุคคลของท่านภายใต้ฐานทางกฎหมาย (ฐานภารกิจเพื่อประโยชน์สาธารณะ ฐานสัญญา ฐานความยินยอม และฐานการปฏิบัติตามกฎหมาย) เพื่อวัตถุประสงค์ดังต่อไปนี้:</p>
+            <ul class="pdpa-list">
+              <li>การให้บริการด้านการศึกษา ทะเบียนนักศึกษา การจัดตารางเรียน ตารางสอบ และการวัดผลประเมินผลการเรียนรู้</li>
+              <li>การรับสมัครนักศึกษาใหม่ การแนะแนวการศึกษา และการจัดกิจกรรมการเรียนรู้ตลอดชีวิต (Lifelong Learning / Credit Bank)</li>
+              <li>การออกเอกสารหลักฐานทางการศึกษา การตรวจสอบวุฒิการศึกษา และการเสนอขออนุมัติปริญญาบัตร</li>
+              <li>การสื่อสาร ประชาสัมพันธ์ข่าวสาร การแจ้งเตือนกำหนดการสำคัญ และการตอบข้อซักถามผ่านระบบออนไลน์</li>
+              <li>การปรับปรุงประสิทธิภาพของระบบสารสนเทศ การรักษาความมั่นคงปลอดภัย และการวิเคราะห์ข้อมูลทางสถิติ</li>
+            </ul>
+          </section>
+
+          <!-- 2. ข้อมูลที่จัดเก็บ -->
+          <section class="pdpa-section">
+            <h3 class="pdpa-sec-title">
+              <span class="pdpa-sec-num">2</span>
+              ข้อมูลส่วนบุคคลที่มีการจัดเก็บรวบรวม
+            </h3>
+            <ul class="pdpa-list">
+              <li><strong>ข้อมูลระบุตัวตน:</strong> คำนำหน้าชื่อ, ชื่อ-นามสกุล, เลขประจำตัวประชาชน/หนังสือเดินทาง, รหัสนักศึกษา, วันเดือนปีเกิด, ภาพถ่าย</li>
+              <li><strong>ข้อมูลการติดต่อ:</strong> ที่อยู่ตามภูมิลำเนา/ที่อยู่ปัจจุบัน, เบอร์โทรศัพท์, อีเมล, บัญชี LINE, บัญชี Social Media สำหรับติดต่อราชการ</li>
+              <li><strong>ข้อมูลทางการศึกษา:</strong> วุฒิการศึกษาเดิม, สาขาวิชา, คณะ, ประวัติผลการเรียน (Transcript), สถานภาพทางการศึกษา</li>
+              <li><strong>ข้อมูลทางเทคนิค:</strong> หมายเลข IP Address, ข้อมูลคุกกี้ (Cookies), ชนิดของเบราว์เซอร์, บันทึกการเข้าใช้งานระบบ (Log Data)</li>
+            </ul>
+          </section>
+
+          <!-- 3. การเปิดเผยข้อมูลส่วนบุคคล (หัวใจสำคัญตามที่ขอ) -->
+          <section class="pdpa-section pdpa-highlight-section">
+            <h3 class="pdpa-sec-title pdpa-highlight-title">
+              <span class="pdpa-sec-num pdpa-highlight-num">3</span>
+              การยินยอมและการเปิดเผยข้อมูลส่วนบุคคลต่อบุคคลภายนอก (Data Disclosure Policy)
+            </h3>
+            <div class="pdpa-highlight-content">
+              <p>
+                <strong>สำนักฯ มีมาตรการคุ้มครองข้อมูลอย่างเข้มงวด และจะไม่มีการจำหน่าย โอน หรือเปิดเผยข้อมูลส่วนบุคคลของท่านให้แก่บุคคลภายนอกเพื่อประโยชน์ในเชิงพาณิชย์โดยเด็ดขาด</strong>
+              </p>
+              <p>อย่างไรก็ดี เพื่อให้การบริการทางการศึกษาและการบริหารจัดการบรรลุตามวัตถุประสงค์ ท่านรับทราบและยินยอมให้สำนักฯ เปิดเผยข้อมูลส่วนบุคคลแก่หน่วยงานและบุคคลดังต่อไปนี้เท่าที่จำเป็นตามหน้าที่และกฎหมาย:</p>
+              <ul class="pdpa-list">
+                <li><strong>หน่วยงานภายในมหาวิทยาลัยราชภัฏศรีสะเกษ:</strong> คณะ/สาขาวิชา, กองบริการการศึกษา, สำนักวิทยบริการและเทคโนโลยีสารสนเทศ, และอาจารย์ที่ปรึกษา เพื่อประโยชน์ด้านการจัดการเรียนการสอนและการดูแลนักศึกษา</li>
+                <li><strong>หน่วยงานกำกับดูแลและหน่วยงานภาครัฐ:</strong> กระทรวงการอุดมศึกษา วิทยาศาสตร์ วิจัยและนวัตกรรม (อว.), สำนักงานการวิจัยแห่งชาติ, กองทุนเงินให้กู้ยืมเพื่อการศึกษา (กยศ.), คุรุสภา, สำนักงานคณะกรรมการการคุ้มครองข้อมูลส่วนบุคคล (สคส.) รวมถึงหน่วยงานตรวจสอบภาครัฐตามที่กฎหมายให้อำนาจ</li>
+                <li><strong>ผู้ประมวลผลข้อมูลส่วนบุคคลและพันธมิตรเทคโนโลยี:</strong> ผู้ให้บริการโครงสร้างพื้นฐานคลาวด์, ระบบจัดการฐานข้อมูล และระบบรับส่งข้อความแจ้งเตือน (เช่น LINE Messaging API, SMS Gateway) ที่มีสัญญาคุ้มครองข้อมูลส่วนบุคคล (Data Processing Agreement: DPA) รัดกุมตามมาตรฐานสากล</li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- 4. ระยะเวลาจัดเก็บ -->
+          <section class="pdpa-section">
+            <h3 class="pdpa-sec-title">
+              <span class="pdpa-sec-num">4</span>
+              ระยะเวลาในการเก็บรักษาและมาตรการความมั่นคงปลอดภัย
+            </h3>
+            <p>สำนักฯ จะจัดเก็บรักษาข้อมูลส่วนบุคคลตามระยะเวลาที่จำเป็นเพื่อประโยชน์ทางการศึกษาและประวัติทะเบียนนักศึกษาถาวรตามระเบียบมหาวิทยาลัย และตามอายุความทางกฎหมาย โดยมีมาตรการรักษาความมั่นคงปลอดภัยทางเทคนิคและการบริหารจัดการ (Technical & Organizational Measures) เช่น การเข้ารหัสข้อมูล (Encryption), ระบบควบคุมการเข้าถึง (Role-based Access Control), และการบันทึก Audit Logs เพื่อป้องกันการสูญหาย ถูกเข้าถึง แก้ไข หรือเปิดเผยโดยมิชอบ</p>
+          </section>
+
+          <!-- 5. สิทธิเจ้าของข้อมูล -->
+          <section class="pdpa-section">
+            <h3 class="pdpa-sec-title">
+              <span class="pdpa-sec-num">5</span>
+              สิทธิของท่านในฐานะเจ้าของข้อมูลส่วนบุคคล (Data Subject Rights)
+            </h3>
+            <p>ท่านมีสิทธิตามกฎหมาย PDPA ดังนี้: สิทธิในการขอเข้าถึงและรับสำเนาข้อมูล, สิทธิในการขอแก้ไขข้อมูลให้ถูกต้องเป็นปัจจุบัน, สิทธิในการขอลบหรือทำลายข้อมูล, สิทธิในการขอระงับการใช้ข้อมูล, สิทธิในการให้โอนย้ายข้อมูล, สิทธิในการคัดค้านการประมวลผล และ <strong>สิทธิในการเพิกถอนความยินยอม</strong> ที่เคยให้ไว้ได้ตลอดเวลา โดยการเพิกถอนความยินยอมจะไม่กระทบต่อการประมวลผลที่ได้กระทำไปแล้วโดยชอบก่อนหน้า</p>
+          </section>
+
+          <!-- 6. ตัวเลือกตั้งค่าความยินยอมแบบละเอียด -->
+          <section class="pdpa-section pdpa-consent-settings">
+            <h3 class="pdpa-sec-title">
+              <span class="pdpa-sec-num">6</span>
+              การตั้งค่าและให้ความยินยอม (Consent Preferences)
+            </h3>
+            <p class="pdpa-subtext">ท่านสามารถเลือกกำหนดระดับความยินยอมในการประมวลผลข้อมูลและคุกกี้ได้ตามความต้องการ:</p>
+
+            <div class="pdpa-toggles">
+              <!-- Item 1: Necessary -->
+              <div class="pdpa-toggle-card">
+                <div class="pdpa-toggle-info">
+                  <div class="pdpa-toggle-label">
+                    <strong>1. ข้อมูลและคุกกี้ที่จำเป็นอย่างยิ่ง (Strictly Necessary)</strong>
+                    <span class="pdpa-badge pdpa-badge-required">จำเป็นเสมอ (Always Active)</span>
+                  </div>
+                  <p>จำเป็นสำหรับการทำงานพื้นฐานของเว็บไซต์ ระบบนำทาง ความปลอดภัย และการเข้าถึงบริการทางการศึกษา ไม่สามารถปิดการใช้งานได้</p>
+                </div>
+                <div class="pdpa-switch-wrap">
+                  <input type="checkbox" id="consentNecessary" checked disabled aria-label="จำเป็นเสมอ">
+                  <label for="consentNecessary" class="pdpa-switch is-disabled"></label>
+                </div>
+              </div>
+
+              <!-- Item 2: Analytics -->
+              <div class="pdpa-toggle-card">
+                <div class="pdpa-toggle-info">
+                  <div class="pdpa-toggle-label">
+                    <strong>2. ข้อมูลเพื่อการวิเคราะห์และพัฒนาบริการ (Analytics & Performance)</strong>
+                    <span class="pdpa-badge pdpa-badge-optional">เลือกได้ (Optional)</span>
+                  </div>
+                  <p>ช่วยให้สำนักฯ เข้าใจพฤติกรรมการใช้งาน เพื่อนำไปพัฒนาโครงสร้างเว็บไซต์ การเข้าถึงเมนู และความเร็วในการแสดงผลข้อมูล</p>
+                </div>
+                <div class="pdpa-switch-wrap">
+                  <input type="checkbox" id="consentAnalytics" checked aria-label="อนุญาตข้อมูลเพื่อการวิเคราะห์">
+                  <label for="consentAnalytics" class="pdpa-switch"></label>
+                </div>
+              </div>
+
+              <!-- Item 3: Personalization & Communication -->
+              <div class="pdpa-toggle-card">
+                <div class="pdpa-toggle-info">
+                  <div class="pdpa-toggle-label">
+                    <strong>3. ข้อมูลเพื่อการติดต่อสื่อสารและการประชาสัมพันธ์ (Communication & Marketing)</strong>
+                    <span class="pdpa-badge pdpa-badge-optional">เลือกได้ (Optional)</span>
+                  </div>
+                  <p>เพื่อรับข่าวสารการรับสมัคร ทุนการศึกษา การแจ้งเตือนกำหนดการสำคัญ และการอำนวยความสะดวกในการติดต่อผ่านช่องทางโซเชียลมีเดีย</p>
+                </div>
+                <div class="pdpa-switch-wrap">
+                  <input type="checkbox" id="consentMarketing" checked aria-label="อนุญาตข้อมูลเพื่อการสื่อสาร">
+                  <label for="consentMarketing" class="pdpa-switch"></label>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 7. ช่องทางติดต่อ DPO -->
+          <section class="pdpa-section pdpa-dpo-box">
+            <h3 class="pdpa-sec-title">
+              <span class="pdpa-sec-num">7</span>
+              ช่องทางการติดต่อเจ้าหน้าที่คุ้มครองข้อมูลส่วนบุคคล (DPO)
+            </h3>
+            <div class="pdpa-contact-details">
+              <p><strong>สำนักส่งเสริมวิชาการและจัดการเรียนรู้ตลอดชีวิต (APLM)</strong></p>
+              <p>มหาวิทยาลัยราชภัฏศรีสะเกษ เลขที่ 319 ถนนไทยพันทา ตำบลโพธิ์ อำเภอเมือง จังหวัดศรีสะเกษ 33000</p>
+              <p>โทรศัพท์: <a href="tel:045643622">045-643-622</a> | LINE Official: <a href="https://lin.ee/wv89bVi" target="_blank" rel="noopener noreferrer">@922dxbcy</a> | เว็บไซต์: <a href="https://www.oass.sskru.ac.th" target="_blank" rel="noopener noreferrer">www.oass.sskru.ac.th</a></p>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div class="pdpa-modal-footer">
+        <button type="button" class="pdpa-btn pdpa-btn-accept-all" id="modalAcceptAll">ยินยอมและยอมรับทั้งหมด</button>
+        <button type="button" class="pdpa-btn pdpa-btn-save-prefs" id="modalSavePreferences">บันทึกการตั้งค่าความยินยอม</button>
+        <button type="button" class="pdpa-btn pdpa-btn-close" id="modalCloseBottom">ปิด</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- กล่องแจ้งเตือน Toast เมื่อบันทึกสำเร็จ -->
+  <div class="pdpa-toast" id="pdpaToast" role="status" aria-live="polite">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2.2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+    <span id="pdpaToastText">บันทึกการตั้งค่าความยินยอมเรียบร้อยแล้ว</span>
+  </div>
 </body>
 </html>
 

@@ -341,46 +341,207 @@
     });
   });
 
-  /* ── PDPA Cookie Consent ── */
+  /* ── PDPA Cookie Consent & Data Disclosure Controller ── */
   const cookieBanner = document.querySelector('#cookieBanner');
   const cookieAcceptAll = document.querySelector('#cookieAcceptAll');
   const cookieNecessaryOnly = document.querySelector('#cookieNecessaryOnly');
+  const cookieCustomize = document.querySelector('#cookieCustomize');
+  const bannerPolicyLink = document.querySelector('#bannerPolicyLink');
   const reopenCookieBanner = document.querySelector('#reopenCookieBanner');
+  const openPdpaPolicyModal = document.querySelector('#openPdpaPolicyModal');
 
-  if (cookieBanner) {
-    let savedConsent = null;
+  const pdpaModal = document.querySelector('#pdpaModal');
+  const pdpaModalClose = document.querySelector('#pdpaModalClose');
+  const modalCloseBottom = document.querySelector('#modalCloseBottom');
+  const modalAcceptAll = document.querySelector('#modalAcceptAll');
+  const modalSavePreferences = document.querySelector('#modalSavePreferences');
+
+  const consentNecessary = document.querySelector('#consentNecessary');
+  const consentAnalytics = document.querySelector('#consentAnalytics');
+  const consentMarketing = document.querySelector('#consentMarketing');
+
+  const pdpaToast = document.querySelector('#pdpaToast');
+  const pdpaToastText = document.querySelector('#pdpaToastText');
+
+  const STORAGE_KEY = 'aplm_pdpa_consent';
+  let toastTimer = null;
+
+  const showToast = (message) => {
+    if (!pdpaToast) return;
+    if (pdpaToastText) pdpaToastText.textContent = message;
+    pdpaToast.classList.add('is-show');
+    if (toastTimer) clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => {
+      pdpaToast.classList.remove('is-show');
+    }, 3200);
+  };
+
+  const getStoredConsent = () => {
     try {
-      savedConsent = localStorage.getItem('aplm_cookie_consent');
+      const data = localStorage.getItem(STORAGE_KEY);
+      if (data) return JSON.parse(data);
+      // Fallback: check legacy cookie consent
+      const legacy = localStorage.getItem('aplm_cookie_consent');
+      if (legacy) {
+        const parsed = JSON.parse(legacy);
+        return {
+          necessary: true,
+          analytics: parsed.level === 'all',
+          marketing: parsed.level === 'all',
+          disclosed_agreed: true,
+          updated_at: new Date(parsed.timestamp || Date.now()).toISOString(),
+        };
+      }
+    } catch (err) {}
+    return null;
+  };
+
+  const saveConsent = (preferences, feedbackMsg) => {
+    const payload = {
+      version: '2.0-pdpa',
+      necessary: true,
+      analytics: Boolean(preferences.analytics),
+      marketing: Boolean(preferences.marketing),
+      disclosed_agreed: true,
+      updated_at: new Date().toISOString(),
+    };
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(payload));
+      localStorage.setItem('aplm_cookie_consent', JSON.stringify({
+        level: (payload.analytics && payload.marketing) ? 'all' : 'necessary',
+        timestamp: Date.now()
+      }));
     } catch (err) {}
 
-    if (!savedConsent) {
-      setTimeout(() => {
-        cookieBanner.hidden = false;
-        requestAnimationFrame(() => cookieBanner.classList.add('is-visible'));
-      }, 700);
-    }
+    // Synchronize UI toggles
+    if (consentAnalytics) consentAnalytics.checked = payload.analytics;
+    if (consentMarketing) consentMarketing.checked = payload.marketing;
 
-    const closeBanner = (level) => {
-      try {
-        localStorage.setItem('aplm_cookie_consent', JSON.stringify({ level, timestamp: Date.now() }));
-      } catch (err) {}
+    // Close banner if visible
+    if (cookieBanner && !cookieBanner.hidden) {
       cookieBanner.classList.remove('is-visible');
       cookieBanner.classList.add('is-closing');
       setTimeout(() => {
         cookieBanner.hidden = true;
         cookieBanner.classList.remove('is-closing');
       }, 350);
-    };
-
-    if (cookieAcceptAll) cookieAcceptAll.addEventListener('click', () => closeBanner('all'));
-    if (cookieNecessaryOnly) cookieNecessaryOnly.addEventListener('click', () => closeBanner('necessary'));
-
-    if (reopenCookieBanner) {
-      reopenCookieBanner.addEventListener('click', () => {
-        cookieBanner.hidden = false;
-        cookieBanner.classList.remove('is-closing');
-        requestAnimationFrame(() => cookieBanner.classList.add('is-visible'));
-      });
     }
+
+    if (feedbackMsg) showToast(feedbackMsg);
+  };
+
+  const openModal = (targetSectionId) => {
+    if (!pdpaModal) return;
+    // Load current consent into toggles
+    const current = getStoredConsent();
+    if (current) {
+      if (consentAnalytics) consentAnalytics.checked = Boolean(current.analytics);
+      if (consentMarketing) consentMarketing.checked = Boolean(current.marketing);
+    } else {
+      if (consentAnalytics) consentAnalytics.checked = true;
+      if (consentMarketing) consentMarketing.checked = true;
+    }
+
+    pdpaModal.hidden = false;
+    document.body.style.overflow = 'hidden';
+    requestAnimationFrame(() => {
+      pdpaModal.classList.add('is-open');
+      if (targetSectionId) {
+        const sec = pdpaModal.querySelector(targetSectionId);
+        if (sec) sec.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  };
+
+  const closeModal = () => {
+    if (!pdpaModal) return;
+    pdpaModal.classList.remove('is-open');
+    document.body.style.overflow = '';
+    setTimeout(() => {
+      pdpaModal.hidden = true;
+    }, 300);
+  };
+
+  // Initialize
+  const currentConsent = getStoredConsent();
+  if (currentConsent) {
+    if (consentAnalytics) consentAnalytics.checked = Boolean(currentConsent.analytics);
+    if (consentMarketing) consentMarketing.checked = Boolean(currentConsent.marketing);
+  } else if (cookieBanner) {
+    setTimeout(() => {
+      cookieBanner.hidden = false;
+      requestAnimationFrame(() => cookieBanner.classList.add('is-visible'));
+    }, 700);
+  }
+
+  // Banner Actions
+  if (cookieAcceptAll) {
+    cookieAcceptAll.addEventListener('click', () => {
+      saveConsent({ analytics: true, marketing: true }, 'ยินยอมการใช้งานข้อมูลและคุกกี้ทั้งหมดเรียบร้อยแล้ว');
+    });
+  }
+
+  if (cookieNecessaryOnly) {
+    cookieNecessaryOnly.addEventListener('click', () => {
+      saveConsent({ analytics: false, marketing: false }, 'บันทึกการยินยอมเฉพาะข้อมูลที่จำเป็นเรียบร้อยแล้ว');
+    });
+  }
+
+  if (cookieCustomize) {
+    cookieCustomize.addEventListener('click', () => {
+      openModal('.pdpa-consent-settings');
+    });
+  }
+
+  if (bannerPolicyLink) {
+    bannerPolicyLink.addEventListener('click', () => {
+      openModal('.pdpa-highlight-section');
+    });
+  }
+
+  // Footer Actions
+  if (reopenCookieBanner) {
+    reopenCookieBanner.addEventListener('click', () => {
+      openModal('.pdpa-consent-settings');
+    });
+  }
+
+  if (openPdpaPolicyModal) {
+    openPdpaPolicyModal.addEventListener('click', (e) => {
+      e.preventDefault();
+      openModal();
+    });
+  }
+
+  // Modal Actions
+  if (pdpaModalClose) pdpaModalClose.addEventListener('click', closeModal);
+  if (modalCloseBottom) modalCloseBottom.addEventListener('click', closeModal);
+
+  if (pdpaModal) {
+    pdpaModal.addEventListener('click', (e) => {
+      if (e.target === pdpaModal) closeModal();
+    });
+  }
+
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && pdpaModal && !pdpaModal.hidden) {
+      closeModal();
+    }
+  });
+
+  if (modalAcceptAll) {
+    modalAcceptAll.addEventListener('click', () => {
+      saveConsent({ analytics: true, marketing: true }, 'ยินยอมการเปิดเผยและประมวลผลข้อมูลทั้งหมดเรียบร้อยแล้ว');
+      closeModal();
+    });
+  }
+
+  if (modalSavePreferences) {
+    modalSavePreferences.addEventListener('click', () => {
+      const analytics = consentAnalytics ? consentAnalytics.checked : false;
+      const marketing = consentMarketing ? consentMarketing.checked : false;
+      saveConsent({ analytics, marketing }, 'บันทึกการตั้งค่าความยินยอมข้อมูลเรียบร้อยแล้ว');
+      closeModal();
+    });
   }
 })();
